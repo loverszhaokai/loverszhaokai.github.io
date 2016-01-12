@@ -19,6 +19,6 @@ title: Interview problems
 
 ### 2.3 Network
 
-* 2.3.1 [Private Ipv4 address]({% post_url 2015-04-25-private_ipv4_address %}) please add "blog/" before 2015-04-25*** (This is a bug of jekyll)
+* 2.3.1 [Private Ipv4 address]({% post_url 2015-04-25-private_ipv4_address %})
 
 
