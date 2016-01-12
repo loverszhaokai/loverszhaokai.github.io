@@ -1,3 +1,8 @@
+---
+layout: post
+title: IPv4 Private Address
+---
+
 This is the IPv4 private address:
 
 |    Address     		|

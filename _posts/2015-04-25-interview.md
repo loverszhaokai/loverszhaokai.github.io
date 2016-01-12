@@ -1,4 +1,7 @@
-# Interview problems
+---
+layout: post
+title: Interview problems
+---
 
 ## 1. Algorithm problems
 

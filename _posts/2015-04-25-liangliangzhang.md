@@ -1,4 +1,7 @@
-# Liangliang Zhang
+---
+layout: post
+title:  Liangliang Zhang
+---
 
 ## Nickname
 

@@ -1,5 +1,7 @@
-
-# Bloomberg London
+---
+layout: post
+title: Bloomberg London
+---
 
 ## 1. What I know about Bloomberg ?
 

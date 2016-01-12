@@ -1,4 +1,7 @@
-# Why add "const reference" to the return value ?
+---
+layout: post
+title: Why add "const reference" to the return value ?
+---
 
 ```C++
 const string& fun() {

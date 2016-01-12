@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Self Introduce
+---
 
 1. For Bloomberg
 

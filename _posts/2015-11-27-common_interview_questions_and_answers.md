@@ -1,5 +1,7 @@
-
-# Common interview questions and answers
+---
+layout: post
+title: Common interview questions and answers
+---
 
 ## 1. Tell me about yourself ?
 

@@ -1,6 +1,9 @@
-# Google Summer of Code 2015
+---
+layout: post
+title: Google Summer of Code 2015
+---
 
-<img src="/blog/images/gsoc2015.jpg" alt="" style="width: 200px;"/>
+![Image description](/images/gsoc2015.jpg)
 
 I was selected by GSoC 2015.
 
