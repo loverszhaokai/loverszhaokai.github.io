@@ -1,3 +1,8 @@
+---
+layout: post
+title: Example content
+---
+
 # git pull VS git fetch and git rebase
 
 reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase
