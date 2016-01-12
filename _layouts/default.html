@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   {% include head.html %}
 
-  <body class="theme-base-0c">
+  {% include google_analytics.html %}
+
+  <body class="theme-base-0d">
 
     {% include sidebar.html %}
 
@@ -11,9 +13,9 @@
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       <div class="masthead">
-        <div class="container">
+        <div class="container" style="text-align:center">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <a href="/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
         </div>
@@ -21,6 +23,9 @@
 
       <div class="container content">
         {{ content }}
+
+        {% include comments.html %}
+
       </div>
     </div>
 
@@ -43,5 +48,8 @@
         }, false);
       })(document);
     </script>
+
+    {% include ga_data_fetch.html %}
+
   </body>
 </html>
