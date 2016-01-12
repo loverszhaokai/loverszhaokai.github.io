@@ -21,18 +21,14 @@ reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-
 ## 2. Git pull from origin/master, if there aren't any conflicts
 ```
 - o - o - o - H - A - B - C - X (master)
-
                \             /
-               
                 P - Q - R ---(origin/master)
 ```
 
 ## 3. Git rebase
 ```
 - o - o - o - H  - P - Q - R - A' - B' - C' (master)
-
                            |
-                           
                            (origin/master)
 ```
 
@@ -40,5 +36,4 @@ reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-
 
 The `rebase` **rewrites your history**, making it look as if you had committed on top of origin's new master branch(`R`), instead of where you originally committed (`H`)
 
-    
-<img src="/blog/images/git_pull_vs_fetch.png" alt="" style="width: 800px;"/>
+<img src="../images/git_pull_vs_fetch.png" alt="" style="width: 800px;"/>
