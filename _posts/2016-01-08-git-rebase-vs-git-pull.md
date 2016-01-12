@@ -1,9 +1,5 @@
 ---
 layout: post
-title: git pull VS git fetch and git rebase
----
----
-layout: post
 title: "git pull VS git fetch and git rebase"
 date:   2016-01-08 20:01 IST
 categories: git
