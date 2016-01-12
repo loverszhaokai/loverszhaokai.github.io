@@ -2,6 +2,16 @@
 layout: post
 title: git pull VS git fetch and git rebase
 ---
+---
+layout: post
+title: "git pull VS git fetch and git rebase"
+date:   2016-01-08 20:01 IST
+categories: git
+tags: git
+comments: true
+analytics: true
+---
+
 
 reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase
 
