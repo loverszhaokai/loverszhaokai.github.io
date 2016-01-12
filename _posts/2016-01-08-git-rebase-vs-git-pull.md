@@ -30,3 +30,4 @@ reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-
 The `rebase` **rewrites your history**, making it look as if you had committed on top of origin's new master branch(`R`), instead of where you originally committed (`H`)
 
 <img src="images/git_pull_vs_fetch.png" alt="" style="width: 800px;"/>
+![Image description](/images/git_pull_vs_fetch.png)
