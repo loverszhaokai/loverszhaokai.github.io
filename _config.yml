@@ -8,10 +8,10 @@ highlighter:         pygments
 permalink:        /posts/:title/
 
 # Setup
-title:            ANAND MANI SANKAR
-tagline:          "thoughts.toString( )"
-description:      'Ramblings and opinionated thoughts on technology.'
-url:              http://anandmanisankar.com
+title:            Kai Zhao
+tagline:          "'s blog"
+description:      'blogs on computer science and technology.'
+url:              http://loverszhaokai.com
 baseurl:          '/'
 paginate:         3
 excerpt_separator: "<br>"
@@ -22,11 +22,11 @@ gems:
 - jekyll-sitemap
 
 author:
-  name:           'Anand Mani Sankar'
-  url:            https://twitter.com/msanand
+  name:           'Kai Zhao'
+  url:            https://loverszhaokai.com
 
 # Custom vars
 version:          1.3.0
 
 github:
-  repo:           https://github.com/msanand/msanand.github.io
+  repo:           https://github.com/loverszhaokai
