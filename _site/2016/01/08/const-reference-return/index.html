@@ -1,0 +1,24 @@
+<h1 id="why-add-const-reference-to-the-return-value-">Why add “const reference” to the return value ?</h1>
+
+<p><code>C++
+const string&amp; fun() {
+      string str = "123";
+      return str;
+}
+</code></p>
+
+<h2 id="without-const-and-reference">1. without const and reference</h2>
+
+<p>```C++
+string fun() {
+      string str = “123”;
+      return str;
+}</p>
+
+<p>int main()
+{
+      string ret = fun(); // Invoke twice string constructor
+      return 0;
+}</p>
+
+<p>```</p>
