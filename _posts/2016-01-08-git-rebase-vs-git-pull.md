@@ -3,10 +3,7 @@ layout: post
 title: git pull VS git fetch and git rebase
 ---
 
-# git pull VS git fetch and git rebase
-
 reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase
-
 
 ## 1. I have done something on the master branch
 
