@@ -3,7 +3,7 @@ layout: post
 title: UTF-8 vs Unicode
 ---
 
-Unicode               | UTF-8
+                Unicode               | UTF-8
 ----------------------|-------
 0000 0000 - 0000 007F | 0xxx xxxx    
 0000 0080 - 0000 07FF | 110x xxxx 10xx xxxx    
