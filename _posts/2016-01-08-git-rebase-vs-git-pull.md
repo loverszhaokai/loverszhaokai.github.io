@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Example content
+title: git pull VS git fetch and git rebase
 ---
 
 # git pull VS git fetch and git rebase
