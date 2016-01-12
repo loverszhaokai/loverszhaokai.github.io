@@ -5,7 +5,6 @@ title: git pull VS git fetch and git rebase
 
 reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase
 
-
 ## 1. I have done something on the master branch
 
         - o - o - o - H - A - B - C (master)
@@ -29,5 +28,4 @@ reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-
 
 The `rebase` **rewrites your history**, making it look as if you had committed on top of origin's new master branch(`R`), instead of where you originally committed (`H`)
 
-<img src="images/git_pull_vs_fetch.png" alt="" style="width: 800px;"/>
 ![Image description](/images/git_pull_vs_fetch.png)
