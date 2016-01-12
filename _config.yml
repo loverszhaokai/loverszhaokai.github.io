@@ -11,6 +11,7 @@ description:         'A reserved <a href="http://jekyllrb.com" target="_blank">J
 url:                 http://lanyon.getpoole.com
 baseurl:             http://loverszhaokai.github.io
 paginate:            5
+markdown:            kramdown
 
 # About/contact
 author:
