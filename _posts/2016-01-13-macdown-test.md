@@ -1,4 +1,12 @@
-# MacDown
+---
+layout: post
+title: "MacDown"
+date:   2016-01-08 20:01 IST
+categories: macdown
+tags: macdown
+comments: true
+analytics: true
+---
 
 ![MacDown logo](http://macdown.uranusjr.com/static/base/img/logo-160.png)
 
