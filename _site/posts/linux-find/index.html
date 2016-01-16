@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Linux find command &middot; Kai Zhao
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/all.min.css">
+  <!-- <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/css/lanyon.css">
+  <link rel="stylesheet" href="/assets/css/custom.css"> -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <link rel="canonical" href="/posts/linux-find/" />
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/libs/jquery.js"><\/script>')</script>
+
+</head>
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53680945-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <br>
+  <div class="smallerCircularProfilePic"></div>
+
+  <div class="sidebar-item" style="text-align:center">
+    <p>blogs on computer science and technology.</p>
+  </div>
+
+  <nav class="sidebar-nav" style="text-align:center">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about.html">About Me</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/archive.html">Archive</a>
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/tags.html">Tags</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+
+<!--     <a class="sidebar-nav-item" href="https://github.com/loverszhaokai/archive/v1.3.0.zip">Download</a> -->
+    <!--<a class="sidebar-nav-item" href="https://github.com/loverszhaokai">GitHub project</a>-->
+    <a class="sidebar-nav-item" target="_blank" href="https://github.com/msanand/feedback/issues/new">Feedback</a>
+    <span class="sidebar-nav-item">v1.3.0</span>
+  </nav>
+
+  <div class="sidebar-item" style="text-align:center">
+    <p>
+      <span id="ga-totalpageviews"></span>
+    </p>
+
+    <p>
+      &copy; 2016. Anand Mani Sankar.
+    </p>
+      All rights reserved.
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container" style="text-align:center">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Kai Zhao</a>
+            <small>'s blog</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <ul class="tags">
+  
+    <li><a href="/tags.html#linux" class="tag">linux</a></li>
+  
+</ul>
+
+<div class="post">
+  <h1 class="post-title">Linux find command</h1>
+  <div>
+    <span class="post-date" style="float: left;">16 Jan 2016</span>
+    <span class="post-date" style="float: right;" id="ga-pageviews"></span>
+  </div>
+  <div style="clear: both;"></div>​
+
+  <p>Reference: <a href="http://www.binarytides.com/linux-find-command-examples/">linux find command examples</a></p>
+
+<h2 id="syntax">Syntax</h2>
+
+<p><code>
+find  [-H] [-L] [-P] [-D debugopts] [-Olevel]  [path...]  [expression]
+</code></p>
+
+<h2 id="basic-examples">1. Basic examples</h2>
+
+<h3 id="list-all-files-in-current-and-sub-directories">1.1 List all files in current and sub directories</h3>
+
+<p>```
+$ find .
+.
+./A
+./A/B
+./A/B/C
+./A/B/C/w_c
+./A/B/w_b
+./A/w_a
+./D
+./D/w_d
+./E
+./E/w_e</p>
+
+<p>```</p>
+
+<h3 id="search-specific-directory">1.2 Search specific directory</h3>
+
+<p><code>
+$ find A
+A
+A/B
+A/B/C
+A/B/C/w_c
+A/B/w_b
+A/w_a
+</code></p>
+
+<h3 id="search-by-name">1.3 Search by name</h3>
+<p>#### 1.3.1 normal</p>
+
+<p><code>
+$ find . -name "w_a"
+./A/w_a
+</code>
+#### 1.3.2 use wildcard
+<code>
+$ find . -name "w_*"
+./A/B/C/w_c
+./A/B/w_b
+./A/w_a
+./D/w_d
+./E/w_e
+</code></p>
+
+<p><code>
+$ find . -name "*.h"  -or  -name "*.cc"
+./A/B/b.h
+./A/hello.h
+./D/d.cc
+</code></p>
+
+<h3 id="limit-depth-of-directory-traversal">1.4 Limit depth of directory traversal</h3>
+<p><code>
+$ find . -maxdepth 2
+.
+./A
+./A/B
+./A/hello.h
+./A/w_a
+./D
+./D/d.cc
+./D/w_d
+./E
+./E/w_e
+</code></p>
+
+<h3 id="invert-match">1.5 Invert match</h3>
+<p><code>
+find . ! -name "*.cc"
+.
+./A
+./A/B
+./A/B/b.h
+./A/B/C
+./A/B/C/w_c
+./A/B/w_b
+./A/hello.h
+./A/w_a
+./D
+./D/w_d
+./E
+./E/w_e
+</code></p>
+
+<p><code>
+$ find . -not -path "./D/*"
+.
+./A
+./A/B
+./A/B/b.h
+./A/B/C
+./A/B/C/w_c
+./A/B/w_b
+./A/hello.h
+./A/w_a
+./D
+./E
+./E/w_e
+</code></p>
+
+<h3 id="combine-multiple-search-criterias">1.6 Combine multiple search criterias</h3>
+<p><code>
+$ find . -name "w*" -not -name "*_d"
+./A/B/C/w_c
+./A/B/w_b
+./A/w_a
+./E/w_e
+</code></p>
+
+<p><code>
+$ find . -name "*.h" -or -name "*.cc"
+./A/B/b.h
+./A/hello.h
+./D/d.cc
+</code></p>
+
+<h3 id="search-by-type">1.7 Search by type</h3>
+<p><code>
+$ find . -type d
+.
+./A
+./A/B
+./A/B/C
+./D
+./E
+</code></p>
+
+<p><code>
+$ find . -type f
+./A/B/b.h
+./A/B/C/w_c
+./A/B/w_b
+./A/hello.h
+./A/w_a
+./D/d.cc
+./D/w_d
+./E/w_e
+</code></p>
+
+<h3 id="search-multiple-directories-together">1.8 Search multiple directories together</h3>
+<p><code>
+$ find D E
+D
+D/d.cc
+D/w_d
+E
+E/w_e
+</code></p>
+
+<h3 id="find-hidden-files">1.9 Find hidden files</h3>
+<p><code>
+$ find . -name ".*"
+.
+./.gitignore
+</code></p>
+
+<h2 id="find-files-based-on-permissions">2. Find files based on permissions</h2>
+
+<h3 id="find-by-permissions">2.1 Find by permissions</h3>
+<p><code>
+$ find . -perm 644
+./.gitignore
+./A/B/b.h
+./A/B/C/w_c
+./A/B/w_b
+./A/hello.h
+./A/w_a
+./D/d.cc
+./D/w_d
+./E/w_e
+</code></p>
+
+<h2 id="find-files-based-on-modification-date-and-time">3. Find files based on modification date and time</h2>
+
+<h3 id="find-files-modified-n-days-back">3.1 Find files modified N days back</h3>
+<p><code>
+$ find . -mtime 1
+.
+./.gitignore
+./A
+./A/B
+./A/B/b.h
+./A/B/C
+./A/B/C/w_c
+./A/B/w_b
+./A/hello.h
+./A/w_a
+./D
+./D/d.cc
+./D/w_d
+./E
+./E/w_e
+</code></p>
+
+<h3 id="find-files-accessed-n-days-back">3.2 Find files accessed N days back</h3>
+<p><code>
+$ find . -atime 0
+.
+./.gitignore
+./A
+./A/B
+./A/B/b.h
+./A/B/C
+./A/B/C/w_c
+./A/B/w_b
+./A/hello.h
+./A/w_a
+./D
+./D/d.cc
+./D/w_d
+./E
+./E/w_e
+</code></p>
+
+<h3 id="find-files-modified-in-a-range-of-days">3.3 Find files modified in a range of days</h3>
+<p><code>
+$ find . -maxdepth 1 -mtime +1 -mtime -4
+.
+./.DS_Store
+./loverszhaokai.github.io
+./loverszhaokai.github.io.back.201601121826
+./skinny-bones-jekyll
+</code></p>
+
+<h3 id="find-files-modified-in-last-n-minutes">3.4 Find files modified in last N minutes</h3>
+<p><code>
+$ find . -cmin -60
+.
+./.gitignore
+</code>
+<code>
+$ find . -mmin -60
+.
+./.gitignore
+</code></p>
+
+<h3 id="find-accessed-files-in-last-n-minutes">3.5 Find accessed files in last N minutes</h3>
+<p><code>
+$ find . -amin -60
+.
+./.gitignore
+./A
+./A/B
+./A/B/C
+./D
+./E
+</code></p>
+
+<h2 id="find-files-based-on-size">4. Find files based on size</h2>
+
+<h3 id="size">4.1 -size</h3>
+
+<p><code>
+$ find . -size 0
+./.gitignore
+./A/B/b.h
+./A/B/C/w_c
+./A/B/w_b
+./A/hello.h
+./A/w_a
+./D/d.cc
+./D/w_d
+./E/w_e
+</code>
+<code>
+$ find . -size -50M
+.
+./.gitignore
+./A
+./A/B
+./A/B/b.h
+./A/B/C
+./A/B/C/w_c
+./A/B/w_b
+./A/hello.h
+./A/w_a
+./D
+./D/d.cc
+./D/w_d
+./E
+./E/w_e
+</code></p>
+
+<p><code>
+$ find . -size +150 -size -50M
+.
+./A
+./A/B
+</code></p>
+
+<h3 id="find-largest-5-files">4.2 Find largest 5 files</h3>
+
+<p><code>
+$ find . -exec ls -s {} \; | sort -n -r | head -5
+8 hello.h
+8 d.cc
+8 ./D/d.cc
+8 ./A/hello.h
+total 8
+</code></p>
+
+<h3 id="find-smallest-5-files">4.3 Find smallest 5 files</h3>
+
+<p><code>
+$ find . -exec ls -s {} \; | sort -n | head -5
+0 ./.gitignore
+0 ./A/B/C/w_c
+0 ./A/B/b.h
+0 ./A/B/w_b
+0 ./A/w_a
+</code></p>
+
+<h3 id="find-empty-files-and-directories">4.4 Find empty files and directories</h3>
+
+<p><code>
+$ find . -empty
+./.gitignore
+./A/B/b.h
+./A/B/C/w_c
+./A/B/w_b
+./A/w_a
+./D/w_d
+./E/w_e
+</code></p>
+
+<h2 id="advanced-options">5. Advanced options</h2>
+
+<h3 id="list-out-the-found-files">5.1 List out the found files</h3>
+<p><code>
+$ find . -exec ls -ld {} \;
+drwxr-xr-x  6 a  staff  204  1 16 16:31 .
+-rw-r--r--  1 a  staff  0  1 16 15:22 ./.gitignore
+drwxr-xr-x  5 a  staff  170  1 16 14:56 ./A
+drwxr-xr-x  5 a  staff  170  1 16 14:56 ./A/B
+-rw-r--r--  1 a  staff  0  1 16 14:56 ./A/B/b.h
+drwxr-xr-x  3 a  staff  102  1 16 14:40 ./A/B/C
+-rw-r--r--  1 a  staff  0  1 16 14:40 ./A/B/C/w_c
+-rw-r--r--  1 a  staff  0  1 16 14:40 ./A/B/w_b
+-rw-r--r--  1 a  staff  4  1 16 16:26 ./A/hello.h
+-rw-r--r--  1 a  staff  0  1 16 14:40 ./A/w_a
+drwxr-xr-x  4 a  staff  136  1 16 14:56 ./D
+-rw-r--r--  1 a  staff  4  1 16 16:26 ./D/d.cc
+-rw-r--r--  1 a  staff  0  1 16 14:40 ./D/w_d
+drwxr-xr-x  3 a  staff  102  1 16 14:40 ./E
+-rw-r--r--  1 a  staff  0  1 16 14:40 ./E/w_e
+</code></p>
+
+<h3 id="delete-all-matching-files-and-directories">5.2 Delete all matching files and directories</h3>
+<p><code>
+$ find . -name "TO_BE_DELETED" -exec rm -rf {} \;
+</code></p>
+
+
+</div>
+
+<div class="ads"><style>
+.responsive-ads { width: 300px; height: 200px; }
+@media(min-width: 520px) { .responsive-ads { width: 468px; height: 60px; } }
+@media(min-width: 768px) { .responsive-ads { width: 160px; height: 600px; } }
+</style>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- google_ad_1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4577160451506699"
+     data-ad-slot="1218187967"
+     data-ad-format="auto"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<span class="post-date">Share this blog: </span>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e8fec950d56b1c"></script>
+<div class="addthis_sharing_toolbox"></div>
+<script type="text/javascript">
+  var addthis_share = addthis_share || {}
+  addthis_share = {
+  	passthrough : {
+  		twitter: {
+  			via: "msanand"
+  		}
+  	}
+  }
+</script>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/posts/macdown-test/">
+            MacDown
+            <small>08 Jan 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/posts/git-rebase-vs-git-pull/">
+            git pull VS git fetch and git rebase
+            <small>08 Jan 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/posts/const-reference-return/">
+            Why add "const reference" to the return value ?
+            <small>08 Jan 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+        
+  <!-- Add Disqus comments. -->
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'loverszhaokai';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </div>
+
+    <div class="ads"><style>
+.responsive-ads { width: 300px; height: 200px; }
+@media(min-width: 520px) { .responsive-ads { width: 468px; height: 60px; } }
+@media(min-width: 768px) { .responsive-ads { width: 160px; height: 600px; } }
+</style>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- google_ad_1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4577160451506699"
+     data-ad-slot="1218187967"
+     data-ad-format="auto"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+
+    <script>
+    var jqxhr = $.ajax("http://msa-super-proxy.appspot.com/query?id=ahFzfm1zYS1zdXBlci1wcm94eXIVCxIIQXBpUXVlcnkYgICAgICAgAoM&format=json")
+          .done(function(response) {
+              if (response !== undefined) {
+                var page_url = "/posts/linux-find/";
+                var page_views = undefined;
+                var total_views = undefined;
+                var oPageViews = {};
+
+                var total_views = response.totalsForAllResults['ga:pageviews'];
+
+                if (total_views !== undefined && total_views !== null &&  $("#ga-totalpageviews-div")) {
+                    $("#ga-totalpageviews").html("Views: " + total_views);
+                }
+
+                if (response.rows !== undefined) {
+                  jQuery.each(response.rows, function(index, row){
+                      var ga_page_url = row[1];
+                      if (page_url.lastIndexOf("/") === (page_url.length - 1)) {
+                        page_url = page_url + "index.html";
+                      }
+                      if (ga_page_url === page_url) {
+                          page_views = row[3];
+                          if (page_views !== undefined && page_views !== null && $("#ga-pageviews-div")) {
+                              $("#ga-pageviews").html("Views: " + page_views);
+                          }
+                      }
+
+                      oPageViews[ga_page_url] = row[3];
+
+                  });
+
+                  $('span[data-post-url]').each(function(index) {
+                    var dataPostUrl = $(this).attr("data-post-url");
+                    if (dataPostUrl.lastIndexOf("/") === (dataPostUrl.length - 1)) {
+                      dataPostUrl = dataPostUrl + "index.html";
+                    }
+
+                    if (oPageViews[dataPostUrl] !== undefined && oPageViews[dataPostUrl] !== null ) {
+                      $(this).html("Views: " + oPageViews[dataPostUrl]);  
+                    }
+
+                  });
+                }
+              }
+          })
+          .fail(function(error) {
+              console.log( "Failed to get GA data" );
+          });
+</script>
+
+
+  </body>
+</html>
