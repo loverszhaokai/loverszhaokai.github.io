@@ -9,7 +9,7 @@ analytics: true
 ---
 
 
-reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase
+reference: [git-pull-vs-git-fetch-git-rebase](http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase)
 
 ## 1. I have done something on the master branch
 ~~~
