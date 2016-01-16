@@ -165,16 +165,14 @@
 
 <h2 id="syntax">Syntax</h2>
 
-<p><code>
-find  [-H] [-L] [-P] [-D debugopts] [-Olevel]  [path...]  [expression]
-</code></p>
+<pre><code>find  [-H] [-L] [-P] [-D debugopts] [-Olevel]  [path...]  [expression]
+</code></pre>
 
 <h2 id="basic-examples">1. Basic examples</h2>
 
 <h3 id="list-all-files-in-current-and-sub-directories">1.1 List all files in current and sub directories</h3>
 
-<p>```
-$ find .
+<pre><code class="language-C">$ find .
 .
 ./A
 ./A/B
@@ -185,49 +183,44 @@ $ find .
 ./D
 ./D/w_d
 ./E
-./E/w_e</p>
-
-<p>```</p>
+./E/w_e
+</code></pre>
 
 <h3 id="search-specific-directory">1.2 Search specific directory</h3>
 
-<p><code>
-$ find A
+<pre><code>$ find A
 A
 A/B
 A/B/C
 A/B/C/w_c
 A/B/w_b
 A/w_a
-</code></p>
+</code></pre>
 
 <h3 id="search-by-name">1.3 Search by name</h3>
 <p>#### 1.3.1 normal</p>
 
-<p><code>
-$ find . -name "w_a"
+<pre><code>$ find . -name "w_a"
 ./A/w_a
-</code>
-#### 1.3.2 use wildcard
-<code>
-$ find . -name "w_*"
+</code></pre>
+<p>#### 1.3.2 use wildcard
+~~~
+$ find . -name “w_*”
 ./A/B/C/w_c
 ./A/B/w_b
 ./A/w_a
 ./D/w_d
 ./E/w_e
-</code></p>
+~~~</p>
 
-<p><code>
-$ find . -name "*.h"  -or  -name "*.cc"
+<pre><code>$ find . -name "*.h"  -or  -name "*.cc"
 ./A/B/b.h
 ./A/hello.h
 ./D/d.cc
-</code></p>
+</code></pre>
 
 <h3 id="limit-depth-of-directory-traversal">1.4 Limit depth of directory traversal</h3>
-<p><code>
-$ find . -maxdepth 2
+<pre><code>$ find . -maxdepth 2
 .
 ./A
 ./A/B
@@ -238,11 +231,10 @@ $ find . -maxdepth 2
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="invert-match">1.5 Invert match</h3>
-<p><code>
-find . ! -name "*.cc"
+<pre><code>find . ! -name "*.cc"
 .
 ./A
 ./A/B
@@ -256,10 +248,9 @@ find . ! -name "*.cc"
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
-<p><code>
-$ find . -not -path "./D/*"
+<pre><code>$ find . -not -path "./D/*"
 .
 ./A
 ./A/B
@@ -272,37 +263,33 @@ $ find . -not -path "./D/*"
 ./D
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="combine-multiple-search-criterias">1.6 Combine multiple search criterias</h3>
-<p><code>
-$ find . -name "w*" -not -name "*_d"
+<pre><code>$ find . -name "w*" -not -name "*_d"
 ./A/B/C/w_c
 ./A/B/w_b
 ./A/w_a
 ./E/w_e
-</code></p>
+</code></pre>
 
-<p><code>
-$ find . -name "*.h" -or -name "*.cc"
+<pre><code>$ find . -name "*.h" -or -name "*.cc"
 ./A/B/b.h
 ./A/hello.h
 ./D/d.cc
-</code></p>
+</code></pre>
 
 <h3 id="search-by-type">1.7 Search by type</h3>
-<p><code>
-$ find . -type d
+<pre><code>$ find . -type d
 .
 ./A
 ./A/B
 ./A/B/C
 ./D
 ./E
-</code></p>
+</code></pre>
 
-<p><code>
-$ find . -type f
+<pre><code>$ find . -type f
 ./A/B/b.h
 ./A/B/C/w_c
 ./A/B/w_b
@@ -311,30 +298,27 @@ $ find . -type f
 ./D/d.cc
 ./D/w_d
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="search-multiple-directories-together">1.8 Search multiple directories together</h3>
-<p><code>
-$ find D E
+<pre><code>$ find D E
 D
 D/d.cc
 D/w_d
 E
 E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="find-hidden-files">1.9 Find hidden files</h3>
-<p><code>
-$ find . -name ".*"
+<pre><code>$ find . -name ".*"
 .
 ./.gitignore
-</code></p>
+</code></pre>
 
 <h2 id="find-files-based-on-permissions">2. Find files based on permissions</h2>
 
 <h3 id="find-by-permissions">2.1 Find by permissions</h3>
-<p><code>
-$ find . -perm 644
+<pre><code>$ find . -perm 644
 ./.gitignore
 ./A/B/b.h
 ./A/B/C/w_c
@@ -344,13 +328,12 @@ $ find . -perm 644
 ./D/d.cc
 ./D/w_d
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h2 id="find-files-based-on-modification-date-and-time">3. Find files based on modification date and time</h2>
 
 <h3 id="find-files-modified-n-days-back">3.1 Find files modified N days back</h3>
-<p><code>
-$ find . -mtime 1
+<pre><code>$ find . -mtime 1
 .
 ./.gitignore
 ./A
@@ -366,11 +349,10 @@ $ find . -mtime 1
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="find-files-accessed-n-days-back">3.2 Find files accessed N days back</h3>
-<p><code>
-$ find . -atime 0
+<pre><code>$ find . -atime 0
 .
 ./.gitignore
 ./A
@@ -386,33 +368,29 @@ $ find . -atime 0
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="find-files-modified-in-a-range-of-days">3.3 Find files modified in a range of days</h3>
-<p><code>
-$ find . -maxdepth 1 -mtime +1 -mtime -4
+<pre><code>$ find . -maxdepth 1 -mtime +1 -mtime -4
 .
 ./.DS_Store
 ./loverszhaokai.github.io
 ./loverszhaokai.github.io.back.201601121826
 ./skinny-bones-jekyll
-</code></p>
+</code></pre>
 
 <h3 id="find-files-modified-in-last-n-minutes">3.4 Find files modified in last N minutes</h3>
-<p><code>
-$ find . -cmin -60
+<pre><code>$ find . -cmin -60
 .
 ./.gitignore
-</code>
-<code>
-$ find . -mmin -60
+</code></pre>
+<pre><code>$ find . -mmin -60
 .
 ./.gitignore
-</code></p>
+</code></pre>
 
 <h3 id="find-accessed-files-in-last-n-minutes">3.5 Find accessed files in last N minutes</h3>
-<p><code>
-$ find . -amin -60
+<pre><code>$ find . -amin -60
 .
 ./.gitignore
 ./A
@@ -420,14 +398,13 @@ $ find . -amin -60
 ./A/B/C
 ./D
 ./E
-</code></p>
+</code></pre>
 
 <h2 id="find-files-based-on-size">4. Find files based on size</h2>
 
 <h3 id="size">4.1 -size</h3>
 
-<p><code>
-$ find . -size 0
+<pre><code>$ find . -size 0
 ./.gitignore
 ./A/B/b.h
 ./A/B/C/w_c
@@ -437,9 +414,8 @@ $ find . -size 0
 ./D/d.cc
 ./D/w_d
 ./E/w_e
-</code>
-<code>
-$ find . -size -50M
+</code></pre>
+<pre><code>$ find . -size -50M
 .
 ./.gitignore
 ./A
@@ -455,41 +431,37 @@ $ find . -size -50M
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
-<p><code>
-$ find . -size +150 -size -50M
+<pre><code>$ find . -size +150 -size -50M
 .
 ./A
 ./A/B
-</code></p>
+</code></pre>
 
 <h3 id="find-largest-5-files">4.2 Find largest 5 files</h3>
 
-<p><code>
-$ find . -exec ls -s {} \; | sort -n -r | head -5
+<pre><code>$ find . -exec ls -s {} \; | sort -n -r | head -5
 8 hello.h
 8 d.cc
 8 ./D/d.cc
 8 ./A/hello.h
 total 8
-</code></p>
+</code></pre>
 
 <h3 id="find-smallest-5-files">4.3 Find smallest 5 files</h3>
 
-<p><code>
-$ find . -exec ls -s {} \; | sort -n | head -5
+<pre><code>$ find . -exec ls -s {} \; | sort -n | head -5
 0 ./.gitignore
 0 ./A/B/C/w_c
 0 ./A/B/b.h
 0 ./A/B/w_b
 0 ./A/w_a
-</code></p>
+</code></pre>
 
 <h3 id="find-empty-files-and-directories">4.4 Find empty files and directories</h3>
 
-<p><code>
-$ find . -empty
+<pre><code>$ find . -empty
 ./.gitignore
 ./A/B/b.h
 ./A/B/C/w_c
@@ -497,13 +469,12 @@ $ find . -empty
 ./A/w_a
 ./D/w_d
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h2 id="advanced-options">5. Advanced options</h2>
 
 <h3 id="list-out-the-found-files">5.1 List out the found files</h3>
-<p><code>
-$ find . -exec ls -ld {} \;
+<pre><code>$ find . -exec ls -ld {} \;
 drwxr-xr-x  6 a  staff  204  1 16 16:31 .
 -rw-r--r--  1 a  staff  0  1 16 15:22 ./.gitignore
 drwxr-xr-x  5 a  staff  170  1 16 14:56 ./A
@@ -519,13 +490,11 @@ drwxr-xr-x  4 a  staff  136  1 16 14:56 ./D
 -rw-r--r--  1 a  staff  0  1 16 14:40 ./D/w_d
 drwxr-xr-x  3 a  staff  102  1 16 14:40 ./E
 -rw-r--r--  1 a  staff  0  1 16 14:40 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="delete-all-matching-files-and-directories">5.2 Delete all matching files and directories</h3>
-<p><code>
-$ find . -name "TO_BE_DELETED" -exec rm -rf {} \;
-</code></p>
-
+<pre><code>$ find . -name "TO_BE_DELETED" -exec rm -rf {} \;
+</code></pre>
 
 </div>
 
@@ -569,15 +538,6 @@ $ find . -name "TO_BE_DELETED" -exec rm -rf {} \;
     
       <li>
         <h3>
-          <a href="/posts/macdown-test/">
-            MacDown
-            <small>08 Jan 2016</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
           <a href="/posts/git-rebase-vs-git-pull/">
             git pull VS git fetch and git rebase
             <small>08 Jan 2016</small>
@@ -590,6 +550,15 @@ $ find . -name "TO_BE_DELETED" -exec rm -rf {} \;
           <a href="/posts/const-reference-return/">
             Why add "const reference" to the return value ?
             <small>08 Jan 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/posts/UTF-8-Chinese/">
+            UTF-8 and Unicode
+            <small>07 Jan 2016</small>
           </a>
         </h3>
       </li>

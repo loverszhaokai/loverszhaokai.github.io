@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Interview problems
+date:   2015-04-25 16:38 IST
+
 ---
 
 ## 1. Algorithm problems

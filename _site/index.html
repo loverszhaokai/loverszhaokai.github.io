@@ -173,16 +173,14 @@
 
 <h2 id="syntax">Syntax</h2>
 
-<p><code>
-find  [-H] [-L] [-P] [-D debugopts] [-Olevel]  [path...]  [expression]
-</code></p>
+<pre><code>find  [-H] [-L] [-P] [-D debugopts] [-Olevel]  [path...]  [expression]
+</code></pre>
 
 <h2 id="basic-examples">1. Basic examples</h2>
 
 <h3 id="list-all-files-in-current-and-sub-directories">1.1 List all files in current and sub directories</h3>
 
-<p>```
-$ find .
+<pre><code class="language-C">$ find .
 .
 ./A
 ./A/B
@@ -193,49 +191,44 @@ $ find .
 ./D
 ./D/w_d
 ./E
-./E/w_e</p>
-
-<p>```</p>
+./E/w_e
+</code></pre>
 
 <h3 id="search-specific-directory">1.2 Search specific directory</h3>
 
-<p><code>
-$ find A
+<pre><code>$ find A
 A
 A/B
 A/B/C
 A/B/C/w_c
 A/B/w_b
 A/w_a
-</code></p>
+</code></pre>
 
 <h3 id="search-by-name">1.3 Search by name</h3>
 <p>#### 1.3.1 normal</p>
 
-<p><code>
-$ find . -name "w_a"
+<pre><code>$ find . -name "w_a"
 ./A/w_a
-</code>
-#### 1.3.2 use wildcard
-<code>
-$ find . -name "w_*"
+</code></pre>
+<p>#### 1.3.2 use wildcard
+~~~
+$ find . -name “w_*”
 ./A/B/C/w_c
 ./A/B/w_b
 ./A/w_a
 ./D/w_d
 ./E/w_e
-</code></p>
+~~~</p>
 
-<p><code>
-$ find . -name "*.h"  -or  -name "*.cc"
+<pre><code>$ find . -name "*.h"  -or  -name "*.cc"
 ./A/B/b.h
 ./A/hello.h
 ./D/d.cc
-</code></p>
+</code></pre>
 
 <h3 id="limit-depth-of-directory-traversal">1.4 Limit depth of directory traversal</h3>
-<p><code>
-$ find . -maxdepth 2
+<pre><code>$ find . -maxdepth 2
 .
 ./A
 ./A/B
@@ -246,11 +239,10 @@ $ find . -maxdepth 2
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="invert-match">1.5 Invert match</h3>
-<p><code>
-find . ! -name "*.cc"
+<pre><code>find . ! -name "*.cc"
 .
 ./A
 ./A/B
@@ -264,10 +256,9 @@ find . ! -name "*.cc"
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
-<p><code>
-$ find . -not -path "./D/*"
+<pre><code>$ find . -not -path "./D/*"
 .
 ./A
 ./A/B
@@ -280,37 +271,33 @@ $ find . -not -path "./D/*"
 ./D
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="combine-multiple-search-criterias">1.6 Combine multiple search criterias</h3>
-<p><code>
-$ find . -name "w*" -not -name "*_d"
+<pre><code>$ find . -name "w*" -not -name "*_d"
 ./A/B/C/w_c
 ./A/B/w_b
 ./A/w_a
 ./E/w_e
-</code></p>
+</code></pre>
 
-<p><code>
-$ find . -name "*.h" -or -name "*.cc"
+<pre><code>$ find . -name "*.h" -or -name "*.cc"
 ./A/B/b.h
 ./A/hello.h
 ./D/d.cc
-</code></p>
+</code></pre>
 
 <h3 id="search-by-type">1.7 Search by type</h3>
-<p><code>
-$ find . -type d
+<pre><code>$ find . -type d
 .
 ./A
 ./A/B
 ./A/B/C
 ./D
 ./E
-</code></p>
+</code></pre>
 
-<p><code>
-$ find . -type f
+<pre><code>$ find . -type f
 ./A/B/b.h
 ./A/B/C/w_c
 ./A/B/w_b
@@ -319,30 +306,27 @@ $ find . -type f
 ./D/d.cc
 ./D/w_d
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="search-multiple-directories-together">1.8 Search multiple directories together</h3>
-<p><code>
-$ find D E
+<pre><code>$ find D E
 D
 D/d.cc
 D/w_d
 E
 E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="find-hidden-files">1.9 Find hidden files</h3>
-<p><code>
-$ find . -name ".*"
+<pre><code>$ find . -name ".*"
 .
 ./.gitignore
-</code></p>
+</code></pre>
 
 <h2 id="find-files-based-on-permissions">2. Find files based on permissions</h2>
 
 <h3 id="find-by-permissions">2.1 Find by permissions</h3>
-<p><code>
-$ find . -perm 644
+<pre><code>$ find . -perm 644
 ./.gitignore
 ./A/B/b.h
 ./A/B/C/w_c
@@ -352,13 +336,12 @@ $ find . -perm 644
 ./D/d.cc
 ./D/w_d
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h2 id="find-files-based-on-modification-date-and-time">3. Find files based on modification date and time</h2>
 
 <h3 id="find-files-modified-n-days-back">3.1 Find files modified N days back</h3>
-<p><code>
-$ find . -mtime 1
+<pre><code>$ find . -mtime 1
 .
 ./.gitignore
 ./A
@@ -374,11 +357,10 @@ $ find . -mtime 1
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="find-files-accessed-n-days-back">3.2 Find files accessed N days back</h3>
-<p><code>
-$ find . -atime 0
+<pre><code>$ find . -atime 0
 .
 ./.gitignore
 ./A
@@ -394,33 +376,29 @@ $ find . -atime 0
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="find-files-modified-in-a-range-of-days">3.3 Find files modified in a range of days</h3>
-<p><code>
-$ find . -maxdepth 1 -mtime +1 -mtime -4
+<pre><code>$ find . -maxdepth 1 -mtime +1 -mtime -4
 .
 ./.DS_Store
 ./loverszhaokai.github.io
 ./loverszhaokai.github.io.back.201601121826
 ./skinny-bones-jekyll
-</code></p>
+</code></pre>
 
 <h3 id="find-files-modified-in-last-n-minutes">3.4 Find files modified in last N minutes</h3>
-<p><code>
-$ find . -cmin -60
+<pre><code>$ find . -cmin -60
 .
 ./.gitignore
-</code>
-<code>
-$ find . -mmin -60
+</code></pre>
+<pre><code>$ find . -mmin -60
 .
 ./.gitignore
-</code></p>
+</code></pre>
 
 <h3 id="find-accessed-files-in-last-n-minutes">3.5 Find accessed files in last N minutes</h3>
-<p><code>
-$ find . -amin -60
+<pre><code>$ find . -amin -60
 .
 ./.gitignore
 ./A
@@ -428,14 +406,13 @@ $ find . -amin -60
 ./A/B/C
 ./D
 ./E
-</code></p>
+</code></pre>
 
 <h2 id="find-files-based-on-size">4. Find files based on size</h2>
 
 <h3 id="size">4.1 -size</h3>
 
-<p><code>
-$ find . -size 0
+<pre><code>$ find . -size 0
 ./.gitignore
 ./A/B/b.h
 ./A/B/C/w_c
@@ -445,9 +422,8 @@ $ find . -size 0
 ./D/d.cc
 ./D/w_d
 ./E/w_e
-</code>
-<code>
-$ find . -size -50M
+</code></pre>
+<pre><code>$ find . -size -50M
 .
 ./.gitignore
 ./A
@@ -463,41 +439,37 @@ $ find . -size -50M
 ./D/w_d
 ./E
 ./E/w_e
-</code></p>
+</code></pre>
 
-<p><code>
-$ find . -size +150 -size -50M
+<pre><code>$ find . -size +150 -size -50M
 .
 ./A
 ./A/B
-</code></p>
+</code></pre>
 
 <h3 id="find-largest-5-files">4.2 Find largest 5 files</h3>
 
-<p><code>
-$ find . -exec ls -s {} \; | sort -n -r | head -5
+<pre><code>$ find . -exec ls -s {} \; | sort -n -r | head -5
 8 hello.h
 8 d.cc
 8 ./D/d.cc
 8 ./A/hello.h
 total 8
-</code></p>
+</code></pre>
 
 <h3 id="find-smallest-5-files">4.3 Find smallest 5 files</h3>
 
-<p><code>
-$ find . -exec ls -s {} \; | sort -n | head -5
+<pre><code>$ find . -exec ls -s {} \; | sort -n | head -5
 0 ./.gitignore
 0 ./A/B/C/w_c
 0 ./A/B/b.h
 0 ./A/B/w_b
 0 ./A/w_a
-</code></p>
+</code></pre>
 
 <h3 id="find-empty-files-and-directories">4.4 Find empty files and directories</h3>
 
-<p><code>
-$ find . -empty
+<pre><code>$ find . -empty
 ./.gitignore
 ./A/B/b.h
 ./A/B/C/w_c
@@ -505,13 +477,12 @@ $ find . -empty
 ./A/w_a
 ./D/w_d
 ./E/w_e
-</code></p>
+</code></pre>
 
 <h2 id="advanced-options">5. Advanced options</h2>
 
 <h3 id="list-out-the-found-files">5.1 List out the found files</h3>
-<p><code>
-$ find . -exec ls -ld {} \;
+<pre><code>$ find . -exec ls -ld {} \;
 drwxr-xr-x  6 a  staff  204  1 16 16:31 .
 -rw-r--r--  1 a  staff  0  1 16 15:22 ./.gitignore
 drwxr-xr-x  5 a  staff  170  1 16 14:56 ./A
@@ -527,455 +498,17 @@ drwxr-xr-x  4 a  staff  136  1 16 14:56 ./D
 -rw-r--r--  1 a  staff  0  1 16 14:40 ./D/w_d
 drwxr-xr-x  3 a  staff  102  1 16 14:40 ./E
 -rw-r--r--  1 a  staff  0  1 16 14:40 ./E/w_e
-</code></p>
+</code></pre>
 
 <h3 id="delete-all-matching-files-and-directories">5.2 Delete all matching files and directories</h3>
-<p><code>
-$ find . -name "TO_BE_DELETED" -exec rm -rf {} \;
-</code></p>
+<pre><code>$ find . -name "TO_BE_DELETED" -exec rm -rf {} \;
+</code></pre>
 
 
 
     <br>
 
     <a href="/posts/linux-find/">
-        Continue reading...
-    </a>
-  </div>
-  
-
-  <ul class="tags">
-    
-      <li><a href="/tags.html#macdown" class="tag">macdown</a></li>
-    
-  </ul>
-
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/posts/macdown-test/">
-        MacDown
-      </a>
-    </h1>
-
-    <div>
-      <span class="post-date" style="float: left;">08 Jan 2016</span>
-      <span class="post-date" data-post-url="/posts/macdown-test/" style="float: right;"></span>
-    </div>
-    <div style="clear: both;"></div>​
-
-    <p><img src="http://macdown.uranusjr.com/static/base/img/logo-160.png" alt="MacDown logo" /></p>
-
-<p>Hello there! I’m <strong>MacDown</strong>, the open source Markdown editor for OS X.</p>
-
-<p>Let me introduce myself.</p>
-
-<h2 id="markdown-and-i">Markdown and I</h2>
-
-<p><strong>Markdown</strong> is a plain text formatting syntax created by John Gruber, aiming to provide a easy-to-read and feasible markup. The original Markdown syntax specification can be found <a href="http://daringfireball.net/projects/markdown/syntax">here</a>.</p>
-
-<p><strong>MacDown</strong> is created as a simple-to-use editor for Markdown documents. I render your Markdown contents real-time into HTML, and display them in a preview panel.</p>
-
-<p><img src="http://d.pr/i/10UGP+" alt="MacDown Screenshot" /></p>
-
-<p>I support all the original Markdown syntaxes. But I can do so much more! Various popular but non-standard syntaxes can be turned on/off from the <a href="#markdown-pane"><strong>Markdown</strong> preference pane</a>.</p>
-
-<p>You can specify extra HTML rendering options through the <a href="#rendering-pane"><strong>Rendering</strong> preference pane</a>.</p>
-
-<p>You can customize the editor window to you liking in the <a href="#editor-pane"><strong>Editor</strong> preferences pane</a>:</p>
-
-<p>You can configure various application (that’s me!) behaviors in the <a href="#general-pane"><strong>General</strong> preference pane</a>.</p>
-
-<h2 id="the-basics">The Basics</h2>
-<p>Before I tell you about all the extra syntaxes and capabilities I have, I’ll introduce you to the basics of standard markdown. If you already know markdown, and want to jump straight to learning about the fancier things I can do, I suggest you skip to the <a href="#markdown-pane"><strong>Markdown</strong> preference pane</a>. Lets jump right in.</p>
-
-<h3 id="line-breaks">Line Breaks</h3>
-<p>To force a line break, put two spaces and a newline (return) at the end of the line.</p>
-
-<pre><code>These lines
-won't break
-
-These lines  
-will break
-</code></pre>
-
-<h3 id="strong-and-emphasize">Strong and Emphasize</h3>
-
-<p><strong>Strong</strong>: <code>**Strong**</code> or <code>__Strong__</code> (Command-B)<br />
-<em>Emphasize</em>: <code>*Emphasize*</code> or <code>_Emphasize_</code><sup id="fnref:emphasize"><a href="#fn:emphasize" class="footnote">1</a></sup> (Command-I)</p>
-
-<h3 id="headers-like-this-one">Headers (like this one!)</h3>
-
-<pre><code>Header 1
-========
-
-Header 2
---------
-</code></pre>
-
-<p>or</p>
-
-<pre><code># Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
-</code></pre>
-
-<h3 id="links-and-email">Links and Email</h3>
-<p>#### Inline
-Just put angle brackets around an email and it becomes clickable: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#117;&#114;&#097;&#110;&#117;&#115;&#106;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#117;&#114;&#097;&#110;&#117;&#115;&#106;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a><br />
-<code>&lt;uranusjr@gmail.com&gt;</code></p>
-
-<p>Same thing with urls: <a href="http://macdown.uranusjr.com">http://macdown.uranusjr.com</a><br />
-` <a href="http://macdown.uranusjr.com">http://macdown.uranusjr.com</a>`</p>
-
-<p>Perhaps you want to some link text like this: <a href="http://macdown.uranusjr.com" title="Title">Macdown Website</a><br />
-<code>[Macdown Website](http://macdown.uranusjr.com "Title")</code> (The title is optional)</p>
-
-<h4 id="reference-style">Reference style</h4>
-<p>Sometimes it looks too messy to include big long urls inline, or you want to keep all your urls together.</p>
-
-<p>Make <a href="http://macdown.uranusjr.com" title="Title">a link</a> <code>[a link][arbitrary_id]</code> then on it’s own line anywhere else in the file:<br />
-<code>[arbitrary_id]: http://macdown.uranusjr.com "Title"</code></p>
-
-<p>If the link text itself would make a good id, you can link <a href="http://macdown.uranusjr.com">like this</a> <code>[like this][]</code>, then on it’s own line anywhere else in the file:<br />
-<code>[like this]: http://macdown.uranusjr.com</code></p>
-
-<h3 id="images">Images</h3>
-<p>#### Inline
-<code>![Alt Image Text](path/or/url/to.jpg "Optional Title")</code>
-#### Reference style
-<code>![Alt Image Text][image-id]</code><br />
-on it’s own line elsewhere:<br />
-<code>[image-id]: path/or/url/to.jpg "Optional Title"</code></p>
-
-<h3 id="lists">Lists</h3>
-
-<ul>
-  <li>Lists must be preceded by a blank line (or block element)</li>
-  <li>Unordered lists start each item with a <code>*</code></li>
-  <li><code>-</code> works too
-    <ul>
-      <li>Indent a level to make a nested list
-        <ol>
-          <li>Ordered lists are supported.</li>
-          <li>Start each item (number-period-space) like <code>1. </code></li>
-          <li>It doesn’t matter what number you use, I will render them sequentially</li>
-          <li>So you might want to start each line with <code>1.</code> and let me sort it out</li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p>Here is the code:</p>
-
-<p><code>
-* Lists must be preceded by a blank line (or block element)
-* Unordered lists start each item with a `*`
-- `-` works too
-	* Indent a level to make a nested list
-		1. Ordered lists are supported.
-		2. Start each item (number-period-space) like `1. `
-		42. It doesn't matter what number you use, I will render them sequentially
-		1. So you might want to start each line with `1.` and let me sort it out
-</code></p>
-
-<h3 id="block-quote">Block Quote</h3>
-
-<blockquote>
-  <p>Angle brackets <code>&gt;</code> are used for block quotes.<br />
-Technically not every line needs to start with a <code>&gt;</code> as long as
-there are no empty lines between paragraphs.<br />
-Looks kinda ugly though.
-&gt; Block quotes can be nested.<br />
-&gt; &gt; Multiple Levels</p>
-
-  <p>Most markdown syntaxes work inside block quotes.</p>
-
-  <ul>
-    <li>Lists</li>
-    <li><a href="http://macdown.uranusjr.com" title="Title">Links</a></li>
-    <li>Etc.</li>
-  </ul>
-</blockquote>
-
-<p>Here is the code:</p>
-
-<p><code>
-&gt; Angle brackets `&gt;` are used for block quotes.  
-Technically not every line needs to start with a `&gt;` as long as
-there are no empty lines between paragraphs.  
-&gt; Looks kinda ugly though.
-&gt; &gt; Block quotes can be nested.  
-&gt; &gt; &gt; Multiple Levels
-&gt;
-&gt; Most markdown syntaxes work inside block quotes.
-&gt;
-&gt; * Lists
-&gt; * [Links][arbitrary_id]
-&gt; * Etc.
-</code></p>
-
-<h3 id="inline-code">Inline Code</h3>
-<p><code>Inline code</code> is indicated by surrounding it with backticks:<br />
-<code>`Inline code`</code></p>
-
-<p>If your <code>code has `backticks`</code> that need to be displayed, you can use double backticks:<br />
-<code>``Code with `backticks` ``</code>  (mind the spaces preceding the final set of backticks)</p>
-
-<h3 id="block-code">Block Code</h3>
-<p>If you indent at least four spaces or one tab, I’ll display a code block.</p>
-
-<pre><code>print('This is a code block')
-print('The block must be preceded by a blank line')
-print('Then indent at least 4 spaces or 1 tab')
-	print('Nesting does nothing. Your code is displayed Literally')
-</code></pre>
-
-<p>I also know how to do something called <a href="#fenced-code-block">Fenced Code Blocks</a> which I will tell you about later.</p>
-
-<h3 id="horizontal-rules">Horizontal Rules</h3>
-<p>If you type three asterisks <code>***</code> or three dashes <code>---</code> on a line, I’ll display a horizontal rule:</p>
-
-<hr />
-
-<h2 id="a-namemarkdown-paneathe-markdown-preference-pane"><a name="markdown-pane"></a>The Markdown Preference Pane</h2>
-<p>This is where I keep all preferences related to how I parse markdown into html.<br />
-<img src="http://d.pr/i/RQEi+" alt="Markdown preferences pane" /></p>
-
-<h3 id="document-formatting">Document Formatting</h3>
-<p>The <strong><em>Smartypants</em></strong> extension automatically transforms straight quotes (<code>"</code> and <code>'</code>) in your text into typographer’s quotes (<code>“</code>, <code>”</code>, <code>‘</code>, and <code>’</code>) according to the context. Very useful if you’re a typography freak like I am. Quote and Smartypants are syntactically incompatible. If both are enabled, Quote takes precedence.</p>
-
-<h3 id="block-formatting">Block Formatting</h3>
-
-<h4 id="table">Table</h4>
-
-<p>This is a table:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>First Header</th>
-      <th>Second Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Content Cell</td>
-      <td>Content Cell</td>
-    </tr>
-    <tr>
-      <td>Content Cell</td>
-      <td>Content Cell</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>You can align cell contents with syntax like this:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Left Aligned</th>
-      <th style="text-align: center">Center Aligned</th>
-      <th style="text-align: right">Right Aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">col 3 is</td>
-      <td style="text-align: center">some wordy text</td>
-      <td style="text-align: right">$1600</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">col 2 is</td>
-      <td style="text-align: center">centered</td>
-      <td style="text-align: right">$12</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">zebra stripes</td>
-      <td style="text-align: center">are neat</td>
-      <td style="text-align: right">$1</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>The left- and right-most pipes (<code>|</code>) are only aesthetic, and can be omitted. The spaces don’t matter, either. Alignment depends solely on <code>:</code> marks.</p>
-
-<h4 id="a-namefenced-code-blockfenced-code-blocka"><a name="fenced-code-block">Fenced Code Block</a></h4>
-
-<p>This is a fenced code block:</p>
-
-<p><code>
-print ('Hello world!)'
-</code></p>
-
-<p>You can also use waves (<code>~</code>) instead of back ticks (<code>`</code>):</p>
-
-<pre><code>print('Hello world!')
-</code></pre>
-
-<p>You can add an optional language ID at the end of the first line. The language ID will only be used to highlight the code inside if you tick the <strong><em>Enable highlighting in code blocks</em></strong> option. This is what happens if you enable it:</p>
-
-<p><img src="http://d.pr/i/9HM6+" alt="Syntax highlighting example" /></p>
-
-<p>I support many popular languages as well as some generic syntax descriptions that can be used if your language of choice is not supported. See <a href="http://macdown.uranusjr.com/features/">relevant sections on the official site</a> for a full list of supported syntaxes.</p>
-
-<h3 id="inline-formatting">Inline Formatting</h3>
-
-<p>The following is a list of optional inline markups supported:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Option name</th>
-      <th>Markup</th>
-      <th>Result if enabled</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Intra-word emphasis</td>
-      <td>So A*maz*ing</td>
-      <td>So A<em>maz</em>ing</td>
-    </tr>
-    <tr>
-      <td>Strikethrough</td>
-      <td>\~~Much wow\~~</td>
-      <td><del>Much wow</del></td>
-    </tr>
-    <tr>
-      <td>Underline <sup id="fnref:under"><a href="#fn:under" class="footnote">2</a></sup></td>
-      <td>_So doge_</td>
-      <td><u>So doge</u></td>
-    </tr>
-    <tr>
-      <td>Quote <sup id="fnref:quote"><a href="#fn:quote" class="footnote">3</a></sup></td>
-      <td>"Such editor"</td>
-      <td><q>Such editor</q></td>
-    </tr>
-    <tr>
-      <td>Highlight</td>
-      <td>==So good==</td>
-      <td><mark>So good</mark></td>
-    </tr>
-    <tr>
-      <td>Superscript</td>
-      <td>hoge\^(fuga)</td>
-      <td>hoge<sup>fuga</sup></td>
-    </tr>
-    <tr>
-      <td>Autolink</td>
-      <td>http://t.co</td>
-      <td><a href="http://t.co">http://t.co</a></td>
-    </tr>
-    <tr>
-      <td>Footnotes</td>
-      <td>[\^4] and [\^4]:</td>
-      <td><sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup> and footnote 4</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="a-namerendering-paneathe-rendering-preference-pane"><a name="rendering-pane"></a>The Rendering Preference Pane</h2>
-<p>This is where I keep preferences relating to how I render and style the parsed markdown in the preview window.<br />
-<img src="http://d.pr/i/rT4d+" alt="Rendering preferences pane" /></p>
-
-<h3 id="css">CSS</h3>
-<p>You can choose different css files for me to use to render your html. You can even customize or add your own custom css files.</p>
-
-<h3 id="syntax-highlighting">Syntax Highlighting</h3>
-<p>You have already seen how I can syntax highlight your fenced code blocks. See the <a href="#fenced-code-block">Fenced Code Block</a> section if you haven’t! You can also choose different themes for syntax highlighting.</p>
-
-<h3 id="tex-like-math-syntax">TeX-like Math Syntax</h3>
-<p>I can also render TeX-like math syntaxes, if you allow me to.<sup id="fnref:math"><a href="#fn:math" class="footnote">5</a></sup> I can do inline math like this: \( 1 + 1 \) or this (in MathML): <math><mn>1</mn><mo>+</mo><mn>1</mn></math>, and block math:</p>
-
-<p>\[
-    A^T_S = B
-\]</p>
-
-<p>or (in MathML)</p>
-
-<math display="block">
-    <msubsup><mi>A</mi> <mi>S</mi> <mi>T</mi></msubsup>
-    <mo>=</mo>
-    <mi>B</mi>
-</math>
-
-<h3 id="task-list-syntax">Task List Syntax</h3>
-<ol>
-  <li>[x] I can render checkbox list syntax
-    <ul>
-      <li>[x] I support nesting</li>
-      <li>[x] I support ordered <em>and</em> unordered lists</li>
-    </ul>
-  </li>
-  <li>[ ] I don’t support clicking checkboxes directly in the html window</li>
-</ol>
-
-<h3 id="jekyll-front-matter">Jekyll front-matter</h3>
-<p>If you like, I can display Jekyll front-matter in a nice table. Just make sure you put the front-matter at the very beginning of the file, and fence it with <code>---</code>. For example:</p>
-
-<h2 id="section">```</h2>
-<p>title: “Macdown is my friend”
-date: 2014-06-06 20:00:00
-—
-```</p>
-
-<h3 id="render-newline-literally">Render newline literally</h3>
-<p>Normally I require you to put two spaces and a newline (aka return) at the end of a line in order to create a line break. If you like, I can render a newline any time you end a line with a newline. However, if you enable this, markdown that looks lovely when I render it might look pretty funky when you let some <em>other</em> program render it.</p>
-
-<h2 id="a-namegeneral-paneathe-general-preferences-pane"><a name="general-pane"></a>The General Preferences Pane</h2>
-
-<p>This is where I keep preferences related to application behavior.<br />
-<img src="http://d.pr/i/rvwu+" alt="General preferences pane" /></p>
-
-<p>The General Preferences Pane allows you to tell me how you want me to behave. For example, do you want me to make sure there is a document open when I launch? You can also tell me if I should constantly update the preview window as you type, or wait for you to hit <code>command-R</code> instead. Maybe you prefer your editor window on the right? Or to see the word-count as you type. This is also the place to tell me if you are interested in pre-releases of me, or just want to stick to better-tested official releases.</p>
-
-<h2 id="a-nameeditor-paneathe-editor-preference-pane"><a name="editor-pane"></a>The Editor Preference Pane</h2>
-<p>This is where I keep preferences related to the behavior and styling of the editing window.<br />
-<img src="http://d.pr/i/6OL5+" alt="Editor preferences pane" /></p>
-
-<h3 id="styling">Styling</h3>
-
-<p>My editor provides syntax highlighting. You can edit the base font and the coloring/sizing theme. I provided some default themes (courtesy of <a href="http://mouapp.com">Mou</a>’s creator, Chen Luo) if you don’t know where to start.</p>
-
-<p>You can also edit, or even add new themes if you want to! Just click the <strong><em>Reveal</em></strong> button, and start moving things around. Remember to use the correct file extension (<code>.styles</code>), though. I’m picky about that.</p>
-
-<p>I offer auto-completion and other functions to ease your editing experience. If you don’t like it, however, you can turn them off.</p>
-
-<h2 id="hack-on">Hack On</h2>
-
-<p>That’s about it. Thanks for listening. I’ll be quiet from now on (unless there’s an update about the app—I’ll remind you for that!).</p>
-
-<p>Happy writing!</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:emphasize">
-      <p>If <strong>Underlines</strong> is turned on, <code>_this notation_</code> will render as underlined instead of emphasized <a href="#fnref:emphasize" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:under">
-      <p>If <strong>Underline</strong> is disabled <code>_this_</code> will be rendered as <em>emphasized</em> instead of being underlined. <a href="#fnref:under" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:quote">
-      <p><strong>Quote</strong> replaces literal <code>"</code> characters with html <code>&lt;q&gt;</code> tags. <strong>Quote</strong> and <strong>Smartypants</strong> are syntactically incompatible. If both are enabled, <strong>Quote</strong> takes precedence. Note that <strong>Quote</strong> is different from <em>blockquote</em>, which is part of standard Markdown. <a href="#fnref:quote" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:4">
-      <p>You don’t have to use a number. Arbitrary things like <code>[^footy note4]</code> and <code>[^footy note4]:</code> will also work. But they will <em>render</em> as numbered footnotes. Also, no need to keep your footnotes in order, I will sort out the order for you so they appear in the same order they were referenced in the text body. You can even keep some footnotes near where you referenced them, and collect others at the bottom of the file in the traditional place for footnotes. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:math">
-      <p>Internet connection required. <a href="#fnref:math" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-
-    <br>
-
-    <a href="/posts/macdown-test/">
         Continue reading...
     </a>
   </div>
@@ -1000,14 +533,13 @@ date: 2014-06-06 20:00:00
     </div>
     <div style="clear: both;"></div>​
 
-    <p>reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase</p>
+    <p>reference: <a href="http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase">git-pull-vs-git-fetch-git-rebase</a></p>
 
 <h2 id="i-have-done-something-on-the-master-branch">1. I have done something on the master branch</h2>
-<p><code>
-- o - o - o - H - A - B - C (master)
+<pre><code>- o - o - o - H - A - B - C (master)
                \
                 P - Q - R (origin/master)
-</code></p>
+</code></pre>
 
 <h2 id="git-pull-from-originmaster-if-there-arent-any-conflicts">2. Git pull from origin/master, if there aren’t any conflicts</h2>
 
@@ -1034,6 +566,56 @@ date: 2014-06-06 20:00:00
     <br>
 
     <a href="/posts/git-rebase-vs-git-pull/">
+        Continue reading...
+    </a>
+  </div>
+  
+
+  <ul class="tags">
+    
+  </ul>
+
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/posts/const-reference-return/">
+        Why add "const reference" to the return value ?
+      </a>
+    </h1>
+
+    <div>
+      <span class="post-date" style="float: left;">08 Jan 2016</span>
+      <span class="post-date" data-post-url="/posts/const-reference-return/" style="float: right;"></span>
+    </div>
+    <div style="clear: both;"></div>​
+
+    <p>~~~C++
+const string&amp; fun() {
+      string str = “123”;
+      return str;
+}
+~~~</p>
+
+<h2 id="without-const-and-reference">1. without const and reference</h2>
+
+<p>~~~C++
+string fun() {
+      string str = “123”;
+      return str;
+}</p>
+
+<p>int main()
+{
+      string ret = fun(); // Invoke twice string constructor
+      return 0;
+}</p>
+
+<p>~~~</p>
+
+
+
+    <br>
+
+    <a href="/posts/const-reference-return/">
         Continue reading...
     </a>
   </div>

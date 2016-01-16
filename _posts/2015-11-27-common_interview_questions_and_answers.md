@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Common interview questions and answers
+date:   2015-11-27 16:38 IST
+
 ---
 
 ## 1. Tell me about yourself ?

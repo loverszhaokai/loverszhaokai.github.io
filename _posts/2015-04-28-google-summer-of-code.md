@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Google Summer of Code 2015
+date:   2015-04-28 16:38 IST
+
 ---
 
 ![Image description](/images/gsoc2015.jpg)

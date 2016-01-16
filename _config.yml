@@ -13,6 +13,10 @@ url:              http://loverszhaokai.com
 baseurl:          '/'
 paginate:         3
 excerpt_separator: "<br>"
+gems:
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
 
 author:
   name:           'Kai Zhao'

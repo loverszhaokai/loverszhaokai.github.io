@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Bloomberg London
+date:   2015-11-30 16:38 IST
+
 ---
 
 ## 1. What I know about Bloomberg ?
