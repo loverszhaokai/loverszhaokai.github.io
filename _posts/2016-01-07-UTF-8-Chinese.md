@@ -1,6 +1,11 @@
 ---
 layout: post
-title: UTF-8 vs Unicode
+title: "UTF-8 and Unicode"
+date:   2016-01-07 20:01 IST
+categories: utf-8 unicode
+tags: utf-8 unicode
+comments: true
+analytics: true
 ---
 
 Unicode               | UTF-8
