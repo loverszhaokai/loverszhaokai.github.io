@@ -14,4 +14,9 @@ This is the IPv4 private address:
 ----|---------------------------
 1| 10.0.0.0    - 10.255.255.255  
 2| 172.16.0.0  - 172.31.255.255  
-3| 192.168.0.0 - 192.168.255.255 
+3| 192.168.0.0 - 192.168.255.255
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
