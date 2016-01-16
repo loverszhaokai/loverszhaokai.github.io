@@ -10,7 +10,7 @@ analytics: true
 
 This is the IPv4 private address:
 
- No |  Address     		            
+ No. |  Address     		            
 ----|---------------------------
 1| 10.0.0.0    - 10.255.255.255  
 2| 172.16.0.0  - 172.31.255.255  
