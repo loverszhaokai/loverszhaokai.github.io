@@ -2,6 +2,7 @@
 markdown:         redcarpet
 redcarpet:
   extensions: ["strikethrough","smart","with_toc_data"]
+  tables: true
 highlighter:         pygments
 
 # Permalinks
