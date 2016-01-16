@@ -20,7 +20,7 @@ find  [-H] [-L] [-P] [-D debugopts] [-Olevel]  [path...]  [expression]
 
 ### 1.1 List all files in current and sub directories
 
-```
+```C
 $ find .
 .
 ./A
