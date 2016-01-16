@@ -8,7 +8,7 @@ comments: true
 analytics: true
 ---
 
-Reference: http://www.binarytides.com/linux-find-command-examples/
+Reference: [linux find command examples](http://www.binarytides.com/linux-find-command-examples/)
 
 ## Syntax
 
