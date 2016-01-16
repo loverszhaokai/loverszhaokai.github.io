@@ -3,16 +3,16 @@ layout: post
 title: Why add "const reference" to the return value ?
 ---
 
-```C++
+~~~C++
 const string& fun() {
       string str = "123";
       return str;
 }
-```
+~~~
 
 ## 1. without const and reference
 
-```C++
+~~~C++
 string fun() {
       string str = "123";
       return str;
@@ -25,4 +25,4 @@ int main()
 }
 
 
-```
+~~~

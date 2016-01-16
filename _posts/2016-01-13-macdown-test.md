@@ -116,7 +116,7 @@ on it's own line elsewhere:
 
 Here is the code:
 
-```
+~~~
 * Lists must be preceded by a blank line (or block element)
 * Unordered lists start each item with a `*`
 - `-` works too
@@ -125,7 +125,7 @@ Here is the code:
 		2. Start each item (number-period-space) like `1. `
 		42. It doesn't matter what number you use, I will render them sequentially
 		1. So you might want to start each line with `1.` and let me sort it out
-```
+~~~
 
 
 
@@ -146,7 +146,7 @@ there are no empty lines between paragraphs.
 
 Here is the code:
 
-```
+~~~
 > Angle brackets `>` are used for block quotes.  
 Technically not every line needs to start with a `>` as long as
 there are no empty lines between paragraphs.  
@@ -159,7 +159,7 @@ there are no empty lines between paragraphs.
 > * Lists
 > * [Links][arbitrary_id]
 > * Etc.
-```
+~~~
   
   
 ### Inline Code
@@ -167,7 +167,7 @@ there are no empty lines between paragraphs.
 `` `Inline code` ``
 
 If your ``code has `backticks` `` that need to be displayed, you can use double backticks:  
-```` ``Code with `backticks` `` ````  (mind the spaces preceding the final set of backticks)
+~~~` ``Code with `backticks` `` ~~~`  (mind the spaces preceding the final set of backticks)
 
 
 ### Block Code
@@ -219,9 +219,9 @@ The left- and right-most pipes (`|`) are only aesthetic, and can be omitted. The
 
 This is a fenced code block:
 
-```
+~~~
 print ('Hello world!)'
-```
+~~~
 
 You can also use waves (`~`) instead of back ticks (`` ` ``):
 
@@ -294,12 +294,12 @@ or (in MathML)
 ### Jekyll front-matter
 If you like, I can display Jekyll front-matter in a nice table. Just make sure you put the front-matter at the very beginning of the file, and fence it with `---`. For example:
 
-```
+~~~
 ---
 title: "Macdown is my friend"
 date: 2014-06-06 20:00:00
 ---
-```
+~~~
 
 ### Render newline literally
 Normally I require you to put two spaces and a newline (aka return) at the end of a line in order to create a line break. If you like, I can render a newline any time you end a line with a newline. However, if you enable this, markdown that looks lovely when I render it might look pretty funky when you let some *other* program render it.

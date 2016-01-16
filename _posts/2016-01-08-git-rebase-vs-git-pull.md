@@ -12,11 +12,11 @@ analytics: true
 reference: http://stackoverflow.com/questions/3357122/git-pull-vs-git-fetch-git-rebase
 
 ## 1. I have done something on the master branch
-```
+~~~
 - o - o - o - H - A - B - C (master)
                \
                 P - Q - R (origin/master)
-```
+~~~
 
 ## 2. Git pull from origin/master, if there aren't any conflicts
 
