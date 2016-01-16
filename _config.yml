@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         kramdowan
+markdown:         kramdown
 highlighter:         pygments
 
 # Permalinks
@@ -13,11 +13,6 @@ url:              http://loverszhaokai.com
 baseurl:          '/'
 paginate:         3
 excerpt_separator: "<br>"
-gems:
-- jekyll-mentions
-- jemoji
-- jekyll-redirect-from
-- jekyll-sitemap
 
 author:
   name:           'Kai Zhao'
