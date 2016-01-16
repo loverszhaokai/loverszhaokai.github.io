@@ -4,7 +4,7 @@ title: Google Summer of Code 2015
 date:   2015-04-28 16:38 IST
 
 ---
-
+<br>
 ![Image description](/images/gsoc2015.jpg)
 
 I was selected by GSoC 2015.

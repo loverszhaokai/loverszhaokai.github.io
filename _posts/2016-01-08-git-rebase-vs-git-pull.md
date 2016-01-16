@@ -17,7 +17,7 @@ reference: [git-pull-vs-git-fetch-git-rebase](http://stackoverflow.com/questions
                \
                 P - Q - R (origin/master)
 ~~~
-
+<br>
 ## 2. Git pull from origin/master, if there aren't any conflicts
 
         - o - o - o - H - A - B - C - X (master)

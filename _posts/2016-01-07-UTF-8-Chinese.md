@@ -7,7 +7,7 @@ tags: utf-8 unicode
 comments: true
 analytics: true
 ---
-
+<br>
 Unicode               | UTF-8
 ----------------------|------------
 0000 0000 - 0000 007F | 0xxx xxxx    
