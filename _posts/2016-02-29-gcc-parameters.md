@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "gcc"
+title: "gcc parameters"
 date:   2016-02-29 00:00 IST
 categories: gcc
 tags: gcc
