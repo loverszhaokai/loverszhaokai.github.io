@@ -82,8 +82,14 @@ int main()
 }
 ~~~
 
-## 2. -Wl,rpath=<your_lib_dir>  VS  -L
+## 2. `-Wl,rpath=<your_lib_dir>`  VS  `-L`
 
 '-L' only works when linking, but '-Wl,rpath=<your_lib_dir>' works after the compile,
 the execute program will remember the dynamic link path.
 
+## 3. gcc -x c -
+
+The last '-' tells gcc to read from stdin. Such as
+`
+# echo 'main() { __asm__("xorb %al, %al"); }' | gcc -x c -
+`
