@@ -17,7 +17,7 @@ analytics: true
 
 `# cmake . -B./build-cmake/Debug/obj`
 
-## 2. cmake --build <dir> [<options>] [-- <build-tool-options>...]
+## 2. `cmake --build <dir> [<options>] [-- <build-tool-options>...]`
 `cmake --build ./path-to-obj --target target_name -- -j4`
 
 If you use `make`, cmake will send `-j4` to `make`.
