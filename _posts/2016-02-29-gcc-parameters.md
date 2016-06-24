@@ -89,7 +89,9 @@ the execute program will remember the dynamic link path.
 
 ## 3. gcc -x c -
 
-The last '-' tells gcc to read from stdin. Such as
+The last '-' tells gcc to read from stdin.
+Such as,
+
 `
 # echo 'main() { __asm__("xorb %al, %al"); }' | gcc -x c -
 `
