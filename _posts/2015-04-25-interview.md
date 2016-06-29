@@ -5,7 +5,7 @@ date:   2015-04-25 16:38 IST
 
 ---
 
-<br>
+<span/>
 
 ## 1. Algorithm problems
 

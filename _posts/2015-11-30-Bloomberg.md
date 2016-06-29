@@ -4,7 +4,7 @@ title: Bloomberg London
 date:   2015-11-30 16:38 IST
 
 ---
-<br>
+<span/>
 ## 1. What I know about Bloomberg ?
 
 Bloomberg is the global business and financial information and news leader.

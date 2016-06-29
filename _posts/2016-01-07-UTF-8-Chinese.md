@@ -7,7 +7,7 @@ tags: utf-8 unicode
 comments: true
 analytics: true
 ---
-<br>
+<span/>
 
 |----------------------+-------------------------------------------------------------|
 |Unicode               | UTF-8                                                       |

@@ -4,7 +4,7 @@ title: Why add "const reference" to the return value ?
 date:   2016-01-08 16:38 IST
 
 ---
-<br>
+<span/>
 
 ~~~
 const string& fun() {

@@ -4,7 +4,7 @@ title: Common interview questions and answers
 date:   2015-11-27 16:38 IST
 
 ---
-<br>
+<span/>
 ## 1. Tell me about yourself ?
 
 keywords: confidence, enthusiasm, education, past work experience, 

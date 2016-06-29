@@ -15,7 +15,7 @@ Reference: [linux xargs command examples](http://www.thegeekstuff.com/2013/12/xa
 ~~~
 
 ~~~
-<br>
+<span/>
 
 # 1. Basic example
 

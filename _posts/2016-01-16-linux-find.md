@@ -15,7 +15,7 @@ Reference: [linux find command examples](http://www.binarytides.com/linux-find-c
 ~~~
 find  [-H] [-L] [-P] [-D debugopts] [-Olevel]  [path...]  [expression]
 ~~~
-<br>
+<span/>
 ## 1. Basic examples
 
 ### 1.1 List all files in current and sub directories

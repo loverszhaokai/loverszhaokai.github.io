@@ -7,7 +7,7 @@ tags: protocol
 comments: true
 analytics: true
 ---
-<br>
+<span/>
 
 This is the IPv4 private address:
 
