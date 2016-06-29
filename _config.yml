@@ -12,7 +12,7 @@ description:      'blogs on computer science and technology.'
 url:              http://loverszhaokai.com
 baseurl:          '/'
 paginate:         3
-excerpt_separator: "<br>"
+excerpt_separator: "<span/>"
 gems:
 - jemoji
 - jekyll-redirect-from
