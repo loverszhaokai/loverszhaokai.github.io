@@ -23,8 +23,8 @@ I think it's a good and fast way for beginners.
 
 ## 3. Top-Down approach
 
-* 1. Learn the high-level process of applied machine learning.
-* 2. Learn how to use a tool enough to be able to work through problems.
-* 3. Practice on datasets, a lot.
-* 4. Transition into the details and theory of machine learning algorithms.
+ 1. Learn the high-level process of applied machine learning.
+ 2. Learn how to use a tool enough to be able to work through problems.
+ 3. Practice on datasets, a lot.
+ 4. Transition into the details and theory of machine learning algorithms.
 
