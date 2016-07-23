@@ -2,8 +2,8 @@
 layout: post
 title: "4-Steps to Get Started in Machine Learning: The Top-Down Strategy for Beginners to Start and Practice"
 date:   2016-08-04 00:00 IST
-categories: "machine learning"
-tags: "machine learning"
+categories: ["machine learning"]
+tags: ["machine learning"]
 comments: true
 analytics: true
 ---
