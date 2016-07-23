@@ -39,6 +39,11 @@ I think it's a good and fast way for beginners.
 
 ## 5. Use the Weka Machine Learning Workbench
 
+* [How to run your first classifier](http://machinelearningmastery.com/how-to-run-your-first-classifier-in-weka/)
+* [How to design and run your first experiment](http://machinelearningmastery.com/design-and-run-your-first-experiment-in-weka/)
+* [How to tune an algorithm rigorously in a designed experiment](http://machinelearningmastery.com/how-to-tune-a-machine-learning-algorithm-in-weka/)
+* [How to use ensemble methods in Weka](http://machinelearningmastery.com/improve-machine-learning-results-with-boosting-bagging-and-blending-ensemble-methods-in-weka/)
+
 ## 6. Practice, Practice, Practice, on Datasets
 
 ## 7. Transitioning Deeper
