@@ -28,3 +28,11 @@ I think it's a good and fast way for beginners.
  3. Practice on datasets, a lot.
  4. Transition into the details and theory of machine learning algorithms.
 
+## 4. Applied Machine Learning Process
+
+### 4.1 Problem Definition
+### 4.2 Analyze Data
+### 4.3 Prepare Data
+### 4.4 Evaluate Algorithms
+### 4.5 Improve Results
+### 4.6 Present Results
