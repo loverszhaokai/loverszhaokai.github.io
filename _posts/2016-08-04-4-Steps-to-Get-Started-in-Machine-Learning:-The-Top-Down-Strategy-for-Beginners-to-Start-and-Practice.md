@@ -42,3 +42,9 @@ I think it's a good and fast way for beginners.
 
 ### 4.6 Present Results    
 
+## 5. Use the Weka Machine Learning Workbench
+
+## 6. Practice, Practice, Practice, on Datasets
+
+## 7. Transitioning Deeper
+
