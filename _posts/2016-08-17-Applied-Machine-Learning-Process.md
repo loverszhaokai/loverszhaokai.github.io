@@ -16,15 +16,22 @@ analytics: true
 
 ## 2. 5-step process
 
-* Define the problem
-* Prepare Data
-* Spot Check Algorithms
-* Improve Results
-* Present Results
+2.1 Define the problem
+2.2 Prepare Data
+2.3 Spot Check Algorithms
+2.4 Improve Results
+2.5 Present Results
 
-## 3. Define the Problem
+## 3. Step 1: Define the Problem
 
 * Step 1: What is the problem?
 * Step 2: Why does the problem need to be solved?
 * Step 3: How would I solve the problem?
 
+## 4. Step 2: Prepare Data
+
+## 5. Step 3: Spot Check Algorithms
+
+## 6. Step 4: Improve Results
+
+## 7. Step 5: Present Results
