@@ -18,7 +18,7 @@ analytics: true
 
 ### 2.1 Input
 
-    The input consists of the k closest training examples in the feature space.
+  The input consists of the k closest training examples in the feature space.
 
 ### 2.2 Ouput
 
@@ -34,7 +34,9 @@ analytics: true
 
   The test sample (green circle) should be classified either to the **first
   class of blue squares** or to the **second class of red triangles**.
+
   If k == 3 (solid  line circle) it is assigned to the **second class** because
   there are 2 triangles and only 1 square inside the inner circle.
+
   If k == 5 (dashed line circle) it is assigned to the **first class** because
   there are 3 squares and 2 triangles inside the outer circle.
