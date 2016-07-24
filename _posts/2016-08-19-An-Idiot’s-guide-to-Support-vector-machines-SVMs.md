@@ -35,3 +35,14 @@ http://www.svms.org/tutorials/Berwick2003.pdf
     3.1.2 New efficient separability of non-linear functions that use "kernel functions"
 
 ### 3.2 The resulting learning algorithm is an optimization algorithm rather than a greedy search
+
+## 4. Statistical Learning Theory
+
+### 4.1 Systems can be mathematically described as a system that
+    Receives data as input and outputs a function that can be used to predict some features of future data
+
+### 4.2 Statistical learning theory models this as a function estimation problem
+
+### 4.3 Generalization Performance is measured
+
+## 5. 
