@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "An Idiot’s guide to Support vector machines (SVMs)"
-date:   2016-08-19 00:00 IST
+date:   2016-08-19 00:00
 categories: ["machine learning"]
 tags: ["machine learning", "svm"]
 comments: true
