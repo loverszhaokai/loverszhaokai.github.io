@@ -28,3 +28,13 @@ analytics: true
 * k-NN regression: the output is the property value for the object. This value
   is the average of the values of its k nearest neighbours.
 
+## 3. Example
+
+![Example](/images/KnnClassification.svg)
+
+  The test sample (green circle) should be classified either to the **first
+  class of blue squares** or to the **second class of red triangles**.
+  If k == 3 (solid  line circle) it is assigned to the **second class** because
+  there are 2 triangles and only 1 square inside the inner circle.
+  If k == 5 (dashed line circle) it is assigned to the **first class** because
+  there are 3 squares and 2 triangles inside the outer circle.
