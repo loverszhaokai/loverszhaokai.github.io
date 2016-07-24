@@ -45,4 +45,11 @@ http://www.svms.org/tutorials/Berwick2003.pdf
 
 ### 4.3 Generalization Performance is measured
 
-## 5. 
+## 5. Organization
+
+### 5.1 Basic idea of support vector machines
+
+* Optimal hyperplane for linearly separable patterns
+* Extend to patterns that are not linearly separable by transformations of original data to map into new space
+
+### 5.2 SVM algorithm for pattern recognition
