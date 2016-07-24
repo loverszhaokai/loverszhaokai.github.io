@@ -30,7 +30,7 @@ analytics: true
 
 ## 3. Example
 
-![Example](/images/KnnClassification.svg) {: margin="0 auto"}
+![Example](/images/KnnClassification.svg) {: .center-image }
 
   The test sample (green circle) should be classified either to the **first
   class of blue squares** or to the **second class of red triangles**.
