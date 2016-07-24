@@ -22,5 +22,9 @@ analytics: true
 
 ### 2.2 Ouput
 
-* k-NN classification: the output is a class membership. An object is calssified by a majority vote of its neighbors, with the object being assigned to the class most common among its k neighbors
-* k-NN regression: 
+* k-NN classification: the output is a class membership. An object is calssified
+  by a majority vote of its neighbors, with the object being assigned to the
+  class most common among its k neighbors.
+* k-NN regression: the output is the property value for the object. This value
+  is the average of the values of its k nearest neighbours.
+
