@@ -9,9 +9,10 @@ analytics: true
 ---
 <span/>
 
-# Table of Content
-    * TOC
-    {:toc}
+## Table of Content
+
+  * TOC
+  {:toc}
 
 ## 1. Reference
 
