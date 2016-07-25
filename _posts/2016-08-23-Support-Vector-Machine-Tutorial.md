@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Support Vector Machine Introduction"
+title: "Support Vector Machine Tutorial"
 date:   2016-08-23 10:00
 categories: ["machine learning"]
 tags: ["machine learning", "svm"]
