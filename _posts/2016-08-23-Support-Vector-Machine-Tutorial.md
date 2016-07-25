@@ -29,7 +29,7 @@ analytics: true
 
 * Transform data to the format of an SVM package
 * Conduct simple scaling on the data
-* Consider the RBF kernel K(x,y) = e ^ (-𝜸||x-y|| ^ 2)
+* Consider the RBF kernel `K(x,y) = e ^ (-𝜸||x-y|| ^ 2)`
 * Use the best parameter C and 𝜸 to train the whole training set
 * Test
 
