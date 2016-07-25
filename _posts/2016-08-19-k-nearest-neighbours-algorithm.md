@@ -9,9 +9,8 @@ analytics: true
 ---
 
 <span/>
-<br>
 
-## Table of Content
+## `Table of Content`
 
   * TOC
   {:toc}
