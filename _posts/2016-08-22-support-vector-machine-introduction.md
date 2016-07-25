@@ -21,7 +21,7 @@ analytics: true
 
 ## 2. Definition
 
-  ![svm](/images/Kernel_Machine.svg){: width="600px"}
+  ![svm](/images/Kernel_Machine.svg){: .center-image }
 
   In machine learning, support vector machines are supervised learning models
   with associated learning algorithms that analyze data used for classification
