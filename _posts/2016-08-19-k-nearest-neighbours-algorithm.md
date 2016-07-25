@@ -9,6 +9,7 @@ analytics: true
 ---
 <span/>
 
+{::options parse_block_html="true" /}
   <div class="toc">
     * TOC
     {:toc}
