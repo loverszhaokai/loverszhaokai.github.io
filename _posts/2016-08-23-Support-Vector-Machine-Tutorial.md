@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Support Vector Machine Introduction"
+date:   2016-08-23 10:00
+categories: ["machine learning"]
+tags: ["machine learning", "svm"]
+comments: true
+analytics: true
+---
+
+<span/>
+
+<span style="color: #0645ad; font-size:16px">Table of Content<span/>
+
+  * TOC
+  {:toc}
+
+## 1. Reference
+
+[support vector machine tutorial](http://www.cs.columbia.edu/~kathy/cs4701/documents/jason_svm_tutorial.pdf)
+
+## 2. Preliminaries
+
+* Machine learning is about **learning structure from data**
+* We want to learn the mapping: X -> Y, where x is some object and y is a class label.
+
+## 3. Example
+
