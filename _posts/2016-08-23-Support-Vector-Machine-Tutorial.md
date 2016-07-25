@@ -25,5 +25,11 @@ analytics: true
 * Machine learning is about **learning structure from data**
 * We want to learn the mapping: X -> Y, where x is some object and y is a class label.
 
-## 3. Example
+## 3. Proposed Procedure
+
+* Transform data to the format of an SVM package
+* Conduct simple scaling on the data
+* Consider the RBF kernel K(x,y) = e ^ (-𝜸||x-y|| ^ 2)
+* Use the best parameter C and 𝜸 to train the whole training set
+* Test
 
