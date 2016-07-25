@@ -9,8 +9,10 @@ analytics: true
 ---
 <span/>
 
-* TOC
-{:toc}
+  <div class="toc">
+    * TOC
+    {:toc}
+  </div>
 
 ## 1. Reference
 
