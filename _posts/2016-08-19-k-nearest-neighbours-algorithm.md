@@ -9,11 +9,9 @@ analytics: true
 ---
 <span/>
 
-{::options parse_block_html="true" /}
-  <div class="toc">
+# Table of Content
     * TOC
     {:toc}
-  </div>
 
 ## 1. Reference
 
