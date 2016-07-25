@@ -17,8 +17,8 @@ analytics: true
 
 ## 1. Reference
 
-[support vector machine tutorial](http://www.cs.columbia.edu/~kathy/cs4701/documents/jason_svm_tutorial.pdf)
-[A Practical Guide to Support Vector Classi cation](http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf)
+    [support vector machine tutorial](http://www.cs.columbia.edu/~kathy/cs4701/documents/jason_svm_tutorial.pdf)
+    [A Practical Guide to Support Vector Classi cation](http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf)
 
 ## 2. Preliminaries
 
