@@ -10,7 +10,7 @@ analytics: true
 
 <span/>
 
-## `Table of Content`
+`Table of Content`
 
   * TOC
   {:toc}
