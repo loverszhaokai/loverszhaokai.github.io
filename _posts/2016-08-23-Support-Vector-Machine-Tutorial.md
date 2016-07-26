@@ -44,8 +44,8 @@ analytics: true
 
 ### 4.2 Scaling
 
-  There are two advantages:
+  There are two advantages:    
   a. Avoid attributes in greater numeric ranges dominating those in smaller
-  numeric ranges.
+  numeric ranges.    
   b. Avoid numerical difficulties during the **calculation**.
 
