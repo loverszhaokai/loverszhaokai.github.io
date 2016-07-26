@@ -38,14 +38,14 @@ analytics: true
 
 ### 4.1 Categorical Feature
 
-    SVM requires that **each data instance is represented as a vector of real
-    numbers**. Hence, if there are categorical attributes, we first have to
-    convert them into numeric data.
+  SVM requires that **each data instance is represented as a vector of real
+  numbers**. Hence, if there are categorical attributes, we first have to
+  convert them into numeric data.
 
 ### 4.2 Scaling
 
-    There are two advantages:
-    a. Avoid attributes in greater numeric ranges dominating those in smaller
-    numeric ranges.{: .color-red }
-    b. Avoid numerical difficulties during the **calculation**.
+  There are two advantages:
+  a. Avoid attributes in greater numeric ranges dominating those in smaller
+  numeric ranges.
+  b. Avoid numerical difficulties during the **calculation**.
 
