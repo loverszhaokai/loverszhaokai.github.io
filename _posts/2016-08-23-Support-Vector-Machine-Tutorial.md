@@ -120,3 +120,22 @@ Scaling testing data...
 Testing...
 Accuracy = 96.875% (3875/4000) (classification)
 ```
+
+## 7. Common Mistakes in Scaling Training and Testing Data
+
+  Use the same scaling factors for training and testing sets.
+
+## 8. When to Use Linear but not RBF Kernel
+
+When the number of features is large.
+
+### 8.1 Number of instances << number of features
+
+### 8.2 Both numbers of instances and features are large
+
+  Such data often occur in document classification. Try LIBSVM and LIBLINEAR,
+  maybe LIBLINEAR is better.
+
+### 8.3 Number of instances >> number of features
+
+  Try LIBSVM and LIBLINEAR, run LIBLINEAR with `-s 1` (default) and `-s 2`.
