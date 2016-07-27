@@ -68,3 +68,56 @@ analytics: true
   There are two parameters for an RBF kernel: **C** and **𝜸**. **The goal** is
   to identify good (C, 𝜸) so that the classifier can accurately predict unknown
   data.
+
+## 6. Examples of the Proposed Procedure
+
+### 6.1 Procedure for each problem
+
+* List the accuracy by direct training and testing
+* Show the difference in accuracy with and without scaling
+* The accuracy by the proposed procedure (scaling and then model selection) is
+presented.
+* Demonstrate the use of a tool in **LIBSVM** which does the whole procedure
+automatically.
+
+### 6.2 Problem: Astroparticle Physics
+
+#### 6.2.1 Original sets with default parameters
+```
+$ ./svm-train svmguide1
+$ ./svm-predict svmguide1.t svmguide1.model svmguide1.t.predict
+--> Accuracy = 66.925%
+```
+
+### 6.2.2 Scaled sets with default parameters
+```
+$ ./svm-scale -l -1 -u 1 -s range1 svmguide1 > svmguide1.scale
+$ ./svm-scale -r rang1 svmguide1.t > svmguide1.t.scale
+$ ./svm-train svmguide1.scale
+$ ./svm-predict svmguide1.t.scale svmguide1.scale.model svmguide1.t.predict
+--> Accuracy = 96.15%
+```
+
+### 6.2.3 Scaled sets with parameter selection (change to the directory tools
+, which contains grid.py)
+```
+$ python grid.py svmguide1.scale
+...
+2.0 2.0 96.8922
+
+$ ./svm-train -c 2 -g 2 svmguide1.scale
+$ ./svm-predict svmguide1.t.scale svmguide1.scale.model svmguide1.t.predict
+--> Accuracy = 96.875%
+```
+
+### 6.2.4 Using an automatic script
+```
+$ python easy.py svmguide1 svmguide1.t
+Scaling training data...
+Cross validation...
+Best c=2.0, g=2.0
+Training...
+Scaling testing data...
+Testing...
+Accuracy = 96.875% (3875/4000) (classification)
+```
