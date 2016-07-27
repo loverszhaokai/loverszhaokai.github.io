@@ -98,8 +98,7 @@ $ ./svm-predict svmguide1.t.scale svmguide1.scale.model svmguide1.t.predict
 --> Accuracy = 96.15%
 ```
 
-### 6.2.3 Scaled sets with parameter selection (change to the directory tools
-, which contains grid.py)
+### 6.2.3 Scaled sets with parameter selection (change to the directory tools, which contains grid.py)
 ```
 $ python grid.py svmguide1.scale
 ...
