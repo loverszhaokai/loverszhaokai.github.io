@@ -49,3 +49,22 @@ analytics: true
   numeric ranges.    
   b. Avoid numerical difficulties during the **calculation**.
 
+## 5. Model Selection
+
+### 5.1 RBF Kernel (Radial Basis Function Kernel)
+
+  **Why the RBF Kernel is the first choice?**    
+  a. It can handle both linear and nonlinear problems.    
+  b. The number of hyperparameters which influences the complexity of model
+  selection and the polynomial kernel has more hyperparameters than the RBF
+  kernel.    
+  c. It has fewer numerical difficulties.
+
+  **When should not use RBF kernel**    
+  When the number of features is very large, you'd better use the linear kernel.
+
+### 5.2 Cross-validation and Grid-search
+
+  There are two parameters for an RBF kernel: **C** and **𝜸**. **The goal** is
+  to identify good (C, 𝜸) so that the classifier can accurately predict unknown
+  data.
