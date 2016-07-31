@@ -64,3 +64,16 @@ Send me a picture of your dog
 ```
 James  we are going to give you a raise
 ```
+
+## 3. Format the Data
+
+To format the data, we are going to understand what LIBSVM is actually going to
+look at and try to learn from. In machine learning lingo, this is referred as
+the **Feature Set**. In this case, **we are going to use the words contained
+in each email as the feature set**.
+
+If a certain word like "Viagra" is found
+in a lot of SPAM emails, but not found in legitimate emails, then the algorithm
+should learn that this indicates that an email is likely SPAM.
+
+
