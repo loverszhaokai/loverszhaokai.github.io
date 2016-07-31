@@ -163,3 +163,58 @@ ham 30:1 19:1 31:1 32:1 33:1 34:1
 ham 35:1 36:1 25:1 26:1 27:1 37:1 29:1
 ham 19:1 38:1 21:1 39:1 31:1 40:1 20:1 25:1 41:1
 ```
+
+## 4. Train the Model
+
+### 4.1 Save the following datas to file 'spam.train'
+
+note: Features of each line must be ascend 
+
+[spam.train](https://github.com/loverszhaokai/SPAM/blob/master/train/spam.train)
+
+```
+1 1:1 2:1 3:1
+1 4:1 5:1 6:1 7:1 8:1
+1 1:1 5:1 9:1 10:1
+1 2:1 11:1 12:1 13:1
+1 1:1 5:1 8:1 13:1 14:1 15:1 16:1 17:1
+0 18:1 19:1 20:1 21:1 22:1
+0 19:1 23:1 24:1 25:1 26:1 27:1 28:1 29:1
+0 19:1 30:1 31:1 32:1 33:1 34:1
+0 25:1 26:1 27:1 29:1 35:1 36:1 37:1
+0 19:1 20:1 21:1 25:1 31:1 38:1 39:1 40:1 41:1
+```
+
+### 4.2 Run svm-train
+
+```
+$ ./svm-train datasets/spam.train
+```
+
+This command will generate model file
+
+[spam.train.model](https://github.com/loverszhaokai/SPAM/blob/master/spam.train.model)
+
+```
+$ cat spam.train.model
+
+svm_type c_svc
+kernel_type rbf
+gamma 0.0243902
+nr_class 2
+total_sv 10
+rho 0.144867
+label 1 0
+nr_sv 5 5
+SV
+1 1:1 2:1 3:1
+1 4:1 5:1 6:1 7:1 8:1
+1 1:1 5:1 9:1 10:1
+1 2:1 11:1 12:1 13:1
+1 1:1 5:1 8:1 13:1 14:1 15:1 16:1 17:1
+-1 18:1 19:1 20:1 21:1 22:1
+-1 19:1 23:1 24:1 25:1 26:1 27:1 28:1 29:1
+-1 19:1 30:1 31:1 32:1 33:1 34:1
+-1 25:1 26:1 27:1 29:1 35:1 36:1 37:1
+-1 19:1 20:1 21:1 25:1 31:1 38:1 39:1 40:1 41:1
+```
