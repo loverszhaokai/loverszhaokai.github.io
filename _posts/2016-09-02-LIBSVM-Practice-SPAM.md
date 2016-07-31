@@ -18,6 +18,7 @@ analytics: true
 ## 1. Reference
 
 [LibSVM Tutorial](http://jamescpoole.com/2012/10/30/libsvm-tutorial-part-1-overview/)
+
 [My Github Project: SPAM](https://github.com/loverszhaokai/SPAM)
 
 ## 2. Training cases
