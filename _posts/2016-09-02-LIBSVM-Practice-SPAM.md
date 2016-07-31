@@ -218,3 +218,54 @@ SV
 -1 25:1 26:1 27:1 29:1 35:1 36:1 37:1
 -1 19:1 20:1 21:1 25:1 31:1 38:1 39:1 40:1 41:1
 ```
+
+## 5. Testing the Model
+
+### 5.1 ham email test
+
+```
+$ cat test/ham.email
+
+James, can you pick up the dog?
+
+$ ./build-cmake/Debug/transform test 0 test/ham.email train/keywords test/ham.email.test
+$ cat test/ham.email.test
+
+0 19:1 20:1 29:1 32:1
+
+$ ../libsvm/svm-predict test/ham.email.test spam.train.model test/ham.email.predicted
+$ cat test/ham.email.predicted
+
+0
+```
+
+### 5.2 spam email test
+
+```
+$ cat test/spam.email
+
+Cheap viagra by mail!
+
+$ cat test/ham.email
+
+James, can you pick up the dog?
+James, you need viagra.
+
+$ ./build-cmake/Debug/transform test 0 test/ham.email train/keywords test/email.test
+$ ./build-cmake/Debug/transform test 1 test/spam.email train/keywords test/email.test
+$ cat test/email.test
+
+0 19:1 20:1 29:1 32:1
+0 15:1 19:1 20:1
+1 4:1 9:1 10:1 15:1
+
+$ ../libsvm/svm-predict test/email.test spam.train.model test/email.predicted
+
+Accuracy = 100% (3/3) (classification)
+
+$ cat test/email.predicted
+
+0
+0
+1
+```
