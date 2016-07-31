@@ -10,7 +10,7 @@ title:            Kai Zhao
 tagline:          "'s blog"
 description:      'blogs on computer science and technology.'
 url:              http://loverszhaokai.com
-baseurl:          '/'
+baseurl:          http://loverszhaokai.com
 paginate:         10
 excerpt_separator: "<span/>"
 gems:
