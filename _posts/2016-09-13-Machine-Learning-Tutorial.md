@@ -19,14 +19,18 @@ analytics: true
 
 [如何高效的学习TensorFlow代码?](http://www.zhihu.com/question/41667903?from=profile_question_card)
 
-## 2. Deep Learing
+## 2. Machine Learning
+
+* [斯坦福大学公开课 ：机器学习课程](http://open.163.com/special/opencourse/machinelearning.html)
+
+## 3. Deep Learing
 
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
 * [Deep Learning--An MIT Press book](http://www.deeplearningbook.org/)
 * [Deep Learning -- Stanford](http://deeplearning.stanford.edu/tutorial/)
 
 
-## 3. TensorFlow
+## 4. TensorFlow
 
 * [TensorFlow 官方文档中文版](http://wiki.jikexueyuan.com/project/tensorflow-zh/)
 * [Learning TensorFlow](http://learningtensorflow.com/)
