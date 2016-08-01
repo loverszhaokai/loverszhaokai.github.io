@@ -22,6 +22,7 @@ analytics: true
 ## 2. Machine Learning
 
 * [斯坦福大学公开课 ：机器学习课程](http://open.163.com/special/opencourse/machinelearning.html)
+* [Machine Learning Andrew Ng](http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning)
 
 ## 3. Deep Learing
 
