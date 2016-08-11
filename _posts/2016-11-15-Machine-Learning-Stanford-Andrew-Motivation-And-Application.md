@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Machine Learning Stanford Andrew Motivation And Application"
-date:   2016-11-15 09:00
+date:  2016-11-14 09:00
 categories: ["machine learning"; "Andrew Ng"]
 tags: ["machine learning"; "Andrew Ng"]
 comments: true
