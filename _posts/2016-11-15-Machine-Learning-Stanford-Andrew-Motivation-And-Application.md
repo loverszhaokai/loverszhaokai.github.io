@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Machine Learning Introduction"
-date:   2016-11-14 09:00
+date:   2016-11-15 09:00
 categories: ["machine learning"]
 tags: ["machine learning"]
 comments: true
