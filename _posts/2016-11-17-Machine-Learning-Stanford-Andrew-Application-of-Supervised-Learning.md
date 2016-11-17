@@ -28,11 +28,22 @@ analytics: true
 * y : output variables / target
 * (x, y) : one training example
 * (x^i, y^i) : ith training example
-* n : the number of features
+ * n : the number of features
 
 ### 2.2 flow diagram
 
 ![flow diagram](/images/2016111701.png){: .center-image }
+
+### 2.3 linear function
+
+![linear function](/images/2016111702.png){: .center-image }
+![linear function](/images/2016111703.png){: .center-image }
+![cost function](/images/2016111704.png){: .center-image }
+![how to update theta](/images/2016111705.png){: .center-image }
+
+
+
+
 
 ## 3. Gradient descent
 
