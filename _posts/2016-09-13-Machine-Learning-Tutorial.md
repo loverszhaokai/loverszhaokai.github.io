@@ -31,6 +31,7 @@ analytics: true
 * 上手实践：《机器学习实战》
 * 推公式：《统计学习方法》
 * 大数据：《hadoop权威指南》
+* hinton's coursera 课程
 
 ## 3. Deep Learing
 
