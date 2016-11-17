@@ -27,7 +27,8 @@ analytics: true
 * x : input variables / features
 * y : output variables / target
 * (x, y) : one training example
-* ($$x^i$$, $$y^i$$) : ith training example
+* (x^i, y^i) : ith training example
+* n : the number of features
 
 ### 2.2 flow diagram
 
