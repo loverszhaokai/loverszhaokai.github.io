@@ -31,7 +31,7 @@ analytics: true
 
 ### 2.2 flow diagram
 
-<img src="/blog/images/2016111701.png" alt="" style="width: 200px;"/>
+<img src="/images/2016111701.png" alt="" style="width: 200px;"/>
 
 ## 3. Gradient descent
 
