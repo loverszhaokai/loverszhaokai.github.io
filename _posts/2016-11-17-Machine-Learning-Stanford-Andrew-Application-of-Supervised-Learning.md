@@ -27,11 +27,11 @@ analytics: true
 * x : input variables / features
 * y : output variables / target
 * (x, y) : one training example
-* ($x^i$, $y^i$) : ith training example
+* ($$x^i$$, $$y^i$$) : ith training example
 
 ### 2.2 flow diagram
 
-<img src="/images/2016111701.png" alt="" style="width: 200px;"/>
+![flow diagram](/images/2016111701.png){: .center-image }
 
 ## 3. Gradient descent
 
