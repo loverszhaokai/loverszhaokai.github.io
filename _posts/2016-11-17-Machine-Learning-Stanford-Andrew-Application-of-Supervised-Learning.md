@@ -50,7 +50,20 @@ For a single training example, this gives the update rule:
 
 ![single training example](/images/2016112202.png){: .center-image }
 
+#### 2.3.1 batch gradient descent
 
+![batch gradient descent](/images/2016112203.png){: .center-image }
+
+#### 2.3.2 stochastic gradient descent
+
+![stochastic gradient descent](/images/2016112204.png){: .center-image }
+
+**summary**
+
+Whereas batch gradient descent has to scan through the entire training set
+before taking a single step(a costly operation if m is large), stochastic
+gradient descent can start making progress right away, and continues to make
+progress with each example it looks at.
 
 
 ## 3. Gradient descent
