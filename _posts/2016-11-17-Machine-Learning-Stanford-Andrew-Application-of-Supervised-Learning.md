@@ -39,8 +39,10 @@ analytics: true
 ![linear function](/images/2016111702.png){: .center-image }
 ![linear function](/images/2016111703.png){: .center-image }
 ![cost function](/images/2016111704.png){: .center-image }
-![how to update theta](/images/2016111705.png){: .center-image }
 
+Gradient descent algorithm:
+
+![how to update theta](/images/2016111705.png){: .center-image }
 
 
 
