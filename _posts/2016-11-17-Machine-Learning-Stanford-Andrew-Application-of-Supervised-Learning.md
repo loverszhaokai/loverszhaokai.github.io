@@ -46,6 +46,11 @@ Gradient descent algorithm:
 
 ![derivative of J(theta)](/images/2016112201.png){: .center-image }
 
+For a single training example, this gives the update rule:
+
+![single training example](/images/2016112202.png){: .center-image }
+
+
 
 
 ## 3. Gradient descent
