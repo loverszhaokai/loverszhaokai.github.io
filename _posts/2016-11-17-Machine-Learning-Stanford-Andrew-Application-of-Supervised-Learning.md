@@ -67,7 +67,29 @@ before taking a single step(a costly operation if m is large), stochastic
 gradient descent can start making progress right away, and continues to make
 progress with each example it looks at.
 
-
 ## 4. Normal equations
 
+### 4.1 Matrix derivatives
+
+#### 4.1.1 derivative
+
+![martix derivative](/images/2016112205.png){: .center-image }
+
+#### 4.1.2 trace
+
+A is a square matrix.
+
+![trace](/images/2016112206.png){: .center-image }
+
+**Fact**
+
+* tr(AB) = tr(BA)
+* tr(ABC) = tr(CAB) = tr(BCA)
+* tr(A) = tr(A^T)
+* tr(A+B) = tr(A) + tr(B)
+* tr(a * A) = a * tr(A)
+
+![trace fact](/images/2016112207.png){: .center-image }
+
+### 4.2 Least squares revisited 
 
