@@ -44,6 +44,7 @@ Gradient descent algorithm:
 
 ![how to update theta](/images/2016111705.png){: .center-image }
 
+![derivative of J(theta)](/images/2016112201.png) {: .center-image }
 
 
 
