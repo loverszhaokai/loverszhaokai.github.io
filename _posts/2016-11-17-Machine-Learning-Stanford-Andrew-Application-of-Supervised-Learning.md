@@ -40,6 +40,8 @@ analytics: true
 ![linear function](/images/2016111703.png){: .center-image }
 ![cost function](/images/2016111704.png){: .center-image }
 
+## 3. Gradient descent
+
 Gradient descent algorithm:
 
 ![how to update theta](/images/2016111705.png){: .center-image }
@@ -50,23 +52,21 @@ For a single training example, this gives the update rule:
 
 ![single training example](/images/2016112202.png){: .center-image }
 
-#### 2.3.1 batch gradient descent
+### 3.1 batch gradient descent
 
 ![batch gradient descent](/images/2016112203.png){: .center-image }
 
-#### 2.3.2 stochastic gradient descent
+### 3.2 stochastic gradient descent
 
 ![stochastic gradient descent](/images/2016112204.png){: .center-image }
 
-**summary**
+### 3.3 summary
 
 Whereas batch gradient descent has to scan through the entire training set
 before taking a single step(a costly operation if m is large), stochastic
 gradient descent can start making progress right away, and continues to make
 progress with each example it looks at.
 
-
-## 3. Gradient descent
 
 ## 4. Normal equations
 
