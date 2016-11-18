@@ -93,3 +93,4 @@ A is a square matrix.
 
 ### 4.2 Least squares revisited 
 
+![normal equations](/images/2016112208.png){: .center-image }
