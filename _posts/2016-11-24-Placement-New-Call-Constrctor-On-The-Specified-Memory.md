@@ -30,3 +30,7 @@ function is called by a new-expression, the **proper initialization will be
 performed** (for class objects, this includes calling its **default
 constructor**).
 
+## 3. Application
+
+memory pool where you malloc a large memory and placement new a class each time.
+Remember to call the destructor before delete the memory.
