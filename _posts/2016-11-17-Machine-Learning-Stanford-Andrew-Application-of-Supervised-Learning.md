@@ -101,3 +101,63 @@ A is a square matrix.
 
 Goal: **the least-squares regression is derived as a very natural algorithm
 under some probabilistic assumptions**.
+
+## 6. Locally weighted linear regression -- overfitting vs underfitting
+
+### 6.1 underfitting
+
+![underfitting](/images/2016112601.png){: .center-image }
+![underfitting](/images/2016112602.png){: .center-image }
+
+### 6.2 overfitting
+
+![overfitting](/images/2016112605.png){: .center-image }
+![overfitting](/images/2016112606.png){: .center-image }
+
+### 6.3 better
+
+![better](/images/2016112603.png){: .center-image }
+![better](/images/2016112604.png){: .center-image }
+
+### 6.4 LWR -- locally weighted regression
+
+#### 6.4.1 Why need the LWR ?
+
+As 6.1, 6.2, and 6.3 shows that the choice of features is important to ensuring
+good performance of a learning algorithm. The LWR makes the choice of features
+less critical if there is sufficient training data.
+
+#### 6.4.2 How to make prediction ?
+
+To make a prediction at a query data **x**.
+
+The original learning algorithm will try to calculate the parameter theta by the
+training data.
+
+![training](/images/2016112607.png){: .center-image }
+
+In contrast, the locally weighted linear regression algorithm will try to
+calculate after get the data **x**, and it will give more weight to those data
+that closes to **x**.
+
+![lwr](/images/2016112608.png){: .center-image }
+
+![w](/images/2016112609.png){: .center-image }
+
+![lwr--around-x](/images/2016112610.jpg){: .center-image }
+
+If the tow is small the *w* will be cragged, otherwise the *w* will be gently.
+
+![tow](/images/2016112611.jpg){: .center-image }
+
+#### 6.4.3 parametric learning algorithm vs non-parametric algorithm
+
+Locally weighted linear algorithm is the first example we are seeing of a
+**non-parametric algorithm**. The unweighted linear regression algorithm that we
+saw earlier is known as a **parametric learning algorithm**, because it has a
+**fixed, finite number of parameters**, which are fit to the data. Once we have
+fit the parameters and stored them away, we no longer need to keep the training
+data around to make future predictions.
+
+In contrast, to make predictions using locally weighted linear regression, we
+need to **keep the entire training set around**.
