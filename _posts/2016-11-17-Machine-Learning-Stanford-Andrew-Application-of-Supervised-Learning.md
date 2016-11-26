@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Machine Learning Stanford Andrew -- Application of Supervised Learning"
+title: "Machine Learning Stanford Andrew -- Linear Regression"
 date:   2016-11-17 09:00
-categories: ["machine learning", "Andrew Ng"]
-tags: ["machine learning", "Andrew Ng"]
+categories: ["machine learning", "Andrew Ng", "linear regression"]
+tags: ["machine learning", "Andrew Ng", "linear regression"]
 comments: true
 analytics: true
 ---
