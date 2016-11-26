@@ -97,7 +97,7 @@ A is a square matrix.
 
 ## 5. Probabilistic interpretation
 
-Did not understand this section.
+<strong style="color:red">Did not understand this section.</strong>
 
 Goal: **the least-squares regression is derived as a very natural algorithm
 under some probabilistic assumptions**.
