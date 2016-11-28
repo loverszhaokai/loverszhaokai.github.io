@@ -97,10 +97,29 @@ A is a square matrix.
 
 ## 5. Probabilistic interpretation
 
-<strong style="color:red">Do not understand this section.</strong>
-
 Goal: **the least-squares regression is derived as a very natural algorithm
 under some probabilistic assumptions**.
+
+### 5.1 Assume 1
+
+Let us assume that the target variables and inputs are related via the equation
+
+![assume 1](/images/2016112801.png){: .center-image }
+
+### 5.2 Assume 2
+
+The E^(i) are distributed IID (independently and indentically distributed)
+according to a **Gaussian distribution** (also called a **Normal distribution**)
+with mean zero and some variance omega.
+
+![assume 2](/images/2016112802.png){: .center-image }
+
+![assume 3](/images/2016112803.png){: .center-image }
+
+### 5.3 Summary
+
+From the assumes we can derive that the goal to get the best theta is to get the
+miniumum J(theta).
 
 ## 6. Locally weighted linear regression -- overfitting vs underfitting
 
