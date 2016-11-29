@@ -30,6 +30,7 @@ Here is a plot showing g(z):
 ![g(z) plot](/images/2016112903.png){: .center-image }
 
 **g(z) towards 1 as z -> infinite great**
+
 **g(z) towards 0 as z -> infinite small**
 
 Let us assume that
