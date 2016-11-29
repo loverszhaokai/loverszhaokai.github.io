@@ -41,6 +41,6 @@ Let us assume that
 
 ![l(theta)](/images/2016112906.png){: .center-image }
 
-stochastic gradient ascent rule:
+stochastic gradient **ascent** rule:
 
 ![update rule](/images/2016112907.png){: .center-image }
