@@ -25,48 +25,48 @@ analytics: true
 ```
 void merge(int a[], int b[], const int left, const int middle,
            const int right) {
-	int li, ri, i;
+  int li, ri, i;
 
-	li = left;
-	ri = middle + 1;
-	i = 0;
+  li = left;
+  ri = middle + 1;
+  i = 0;
 
-	while (li <= middle && ri <= right) {
-		if (a[li] < a[ri])
-			b[i++] = a[li++];
-		else
-			b[i++] = a[ri++];
-	}
+  while (li <= middle && ri <= right) {
+    if (a[li] < a[ri])
+      b[i++] = a[li++];
+    else
+      b[i++] = a[ri++];
+  }
 
-	while (li <= middle)
-		b[i++] = a[li++];
-	while (ri <= right)
-		b[i++] = a[ri++];
+  while (li <= middle)
+    b[i++] = a[li++];
+  while (ri <= right)
+    b[i++] = a[ri++];
 }
 
 void copy(int dst[], int dleft, int src[], int sleft, int sright) {
-	memcpy(dst + dleft, src + sleft, sizeof(int) * (sright - sleft + 1));
+  memcpy(dst + dleft, src + sleft, sizeof(int) * (sright - sleft + 1));
 }
 
 void _merge_sort(int a[], int b[], const int left, const int right) {
-	if (left >= right)
-		return;
+  if (left >= right)
+    return;
 
-	int middle = (left + right) / 2;
+  int middle = (left + right) / 2;
 
-	_merge_sort(a, b, left, middle);
-	_merge_sort(a, b, middle + 1, right);
+  _merge_sort(a, b, left, middle);
+  _merge_sort(a, b, middle + 1, right);
 
-	merge(a, b, left, middle, right);
-	copy(a, left, b, 0, right - left);
+  merge(a, b, left, middle, right);
+  copy(a, left, b, 0, right - left);
 }
 
 void merge_sort(int a[], const int size) {
-	int *b = (int *)malloc(size * sizeof(int));
+  int *b = (int *)malloc(size * sizeof(int));
 
-	_merge_sort(a, b, 0, size - 1);
+  _merge_sort(a, b, 0, size - 1);
 
-	free(b);
+  free(b);
 }
 ```
 
