@@ -22,7 +22,7 @@ analytics: true
 
 ## 2. MergeSort
 
-```
+```c++
 void merge(int a[], int b[], const int left, const int middle,
            const int right) {
   int li, ri, i;
@@ -45,7 +45,8 @@ void merge(int a[], int b[], const int left, const int middle,
 }
 
 void copy(int dst[], int dleft, int src[], int sleft, int sright) {
-  memcpy(dst + dleft, src + sleft, sizeof(int) * (sright - sleft + 1));
+  memcpy(dst + dleft, src + sleft,
+         sizeof(int) * (sright - sleft + 1));
 }
 
 void _merge_sort(int a[], int b[], const int left, const int right) {
@@ -72,14 +73,15 @@ void merge_sort(int a[], const int size) {
 
 ## 3. More Efficient MergeSort
 
-We can save some time by copy half when `merge`. In *merge()*, we copy from
-*left* to *right*, but in *MergeKai* we can copy from *left* to *middle*.
+We can save some time by copy half when `merge`. In `merge()`, we copy from
+**left** to **right**, but in `MergeKai()` we can copy from **left** to
+**middle**.
 
 ```
-// Merge the two list in [left, mid], and (mid, right]. Then, write the result
-// to [left, right]
-static void MergeKai(int a[], int assist[], const int left, const int mid,
-                     const int right) {
+// Merge the two list in [left, mid], and (mid, right]. Then, write
+// the result to [left, right]
+static void MergeKai(int a[], int assist[], const int left,
+                     const int mid, const int right) {
   int l = left;
   int r = mid + 1;
   int assist_index = 0;
@@ -119,10 +121,10 @@ static void MergeSortKaiImpl(int a[], int assist[], const int left,
 }
 
 void MergeSortKai(int a[], const int size) {
-	int* assist= (int *)malloc(size * sizeof(int));
+  int* assist= (int *)malloc(size * sizeof(int));
 
   MergeSortKaiImpl(a, assist, 0, size - 1);
 
-	free(assist);
+  free(assist);
 }
 ```
