@@ -144,3 +144,40 @@ void MergeSortKai(int a[], const int size) {
   free(assist);
 }
 ```
+
+## 4. Experiments
+
+source: [https://github.com/loverszhaokai/ALG/blob/master/src/sort.cc](https://github.com/loverszhaokai/ALG/blob/master/src/sort.cc)
+
+[https://github.com/loverszhaokai/ALG/blob/master/test/sort_test.cc](https://github.com/loverszhaokai/ALG/blob/master/test/sort_test.cc)
+
+result:
+
+```
+It takes 1524.61 ms to generate arrays: 1000000 * 20
+
+            Sort Function      Total Run Time          Array Size
+------------------------------------------------------------------------------------------
+   merge_sort_iteratively            826 ms            1000000 * 20
+               merge_sort            840 ms            1000000 * 20
+  MergeSortIterativelyKai            826 ms            1000000 * 20
+             MergeSortKai            809 ms            1000000 * 20
+
+It takes 15028.2 ms to generate arrays: 10000000 * 20
+
+            Sort Function      Total Run Time          Array Size
+------------------------------------------------------------------------------------------
+   merge_sort_iteratively           8717 ms           10000000 * 20
+               merge_sort           8820 ms           10000000 * 20
+  MergeSortIterativelyKai           8425 ms           10000000 * 20
+             MergeSortKai           8389 ms           10000000 * 20
+
+It takes 1929.31 ms to generate arrays: 100000 * 200
+
+            Sort Function      Total Run Time          Array Size
+------------------------------------------------------------------------------------------
+   merge_sort_iteratively           1245 ms             100000 * 200
+               merge_sort           1347 ms             100000 * 200
+  MergeSortIterativelyKai           1246 ms             100000 * 200
+             MergeSortKai           1275 ms             100000 * 200
+```
