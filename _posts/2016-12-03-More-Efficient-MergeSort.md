@@ -157,7 +157,7 @@ result:
 It takes 1524.61 ms to generate arrays: 1000000 * 20
 
             Sort Function      Total Run Time          Array Size
-------------------------------------------------------------------------------------------
+---------------------------------------------------------------------
    merge_sort_iteratively            826 ms            1000000 * 20
                merge_sort            840 ms            1000000 * 20
   MergeSortIterativelyKai            826 ms            1000000 * 20
@@ -166,7 +166,7 @@ It takes 1524.61 ms to generate arrays: 1000000 * 20
 It takes 15028.2 ms to generate arrays: 10000000 * 20
 
             Sort Function      Total Run Time          Array Size
-------------------------------------------------------------------------------------------
+---------------------------------------------------------------------
    merge_sort_iteratively           8717 ms           10000000 * 20
                merge_sort           8820 ms           10000000 * 20
   MergeSortIterativelyKai           8425 ms           10000000 * 20
@@ -175,7 +175,7 @@ It takes 15028.2 ms to generate arrays: 10000000 * 20
 It takes 1929.31 ms to generate arrays: 100000 * 200
 
             Sort Function      Total Run Time          Array Size
-------------------------------------------------------------------------------------------
+---------------------------------------------------------------------
    merge_sort_iteratively           1245 ms             100000 * 200
                merge_sort           1347 ms             100000 * 200
   MergeSortIterativelyKai           1246 ms             100000 * 200
