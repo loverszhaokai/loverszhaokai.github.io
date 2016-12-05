@@ -80,7 +80,13 @@ We can save some time by copy half when `merge()`. In `merge()`, we copy from
 
 ![normal merge sort](/images/2016120501.png){: .center-image }
 
+<span style="text-align: center"> normal merge sort </span>
+<br/>
+
 ![efficient merge sort](/images/2016120502.png){: .center-image }
+
+<span style="text-align: center"> more efficient merge sort </span>
+<br/>
 
 Just as the previous example, the efficient merge sort does not need to copy
 `1, 3, 7, 8` to the assit array.
