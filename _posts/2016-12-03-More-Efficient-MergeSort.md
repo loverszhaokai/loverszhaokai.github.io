@@ -75,7 +75,16 @@ void merge_sort(int a[], const int size) {
 
 We can save some time by copy half when `merge()`. In `merge()`, we copy from
 **left** to **right**, but in `MergeKai()` we can only copy from **left** to
-**middle**.
+**middle**. The `merge()` has `NlgN` duplications which the `MergeKai()` has
+`1/2 * NlgN` duplications.
+
+![normal merge sort](/images/2016120501.png){: .center-image }
+
+![efficient merge sort](/images/2016120502.png){: .center-image }
+
+Just as the previous example, the efficient merge sort does not need to copy
+`1, 3, 7, 8` to the assit array.
+
 
 ```c++
 // Merge the two list in [left, mid], and (mid, right]. Then, write
