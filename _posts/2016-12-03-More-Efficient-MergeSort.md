@@ -73,11 +73,11 @@ void merge_sort(int a[], const int size) {
 
 ## 3. More Efficient MergeSort
 
-We can save some time by copy half when `merge`. In `merge()`, we copy from
-**left** to **right**, but in `MergeKai()` we can copy from **left** to
+We can save some time by copy half when `merge()`. In `merge()`, we copy from
+**left** to **right**, but in `MergeKai()` we can only copy from **left** to
 **middle**.
 
-```
+```c++
 // Merge the two list in [left, mid], and (mid, right]. Then, write
 // the result to [left, right]
 static void MergeKai(int a[], int assist[], const int left,
