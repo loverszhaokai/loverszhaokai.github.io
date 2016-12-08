@@ -84,6 +84,9 @@ A is a square matrix.
 **Fact**
 
 * tr(AB) = tr(BA)
+
+![fact1](/images/2016120801.png){: .center-image }
+
 * tr(ABC) = tr(CAB) = tr(BCA)
 * tr(A) = tr(A^T)
 * tr(A+B) = tr(A) + tr(B)
