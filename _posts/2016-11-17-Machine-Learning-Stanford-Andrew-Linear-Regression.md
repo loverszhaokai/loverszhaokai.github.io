@@ -85,7 +85,7 @@ A is a square matrix.
 
 * tr(AB) = tr(BA)
 
-[matrix_derivatives.pdf](/pdfs/matrix_derivatives.pdf)
+[proof by pdf](/pdfs/matrix_derivatives.pdf)
 
 * tr(ABC) = tr(CAB) = tr(BCA)
 * tr(A) = tr(A^T)
