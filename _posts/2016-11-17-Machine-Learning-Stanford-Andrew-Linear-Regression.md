@@ -83,10 +83,7 @@ A is a square matrix.
 
 **Fact**
 
-* tr(AB) = tr(BA)
-
-[proof by pdf](/pdfs/matrix_derivatives.pdf)
-
+* tr(AB) = tr(BA)   [prove by pdf](/pdfs/matrix_derivatives.pdf)
 * tr(ABC) = tr(CAB) = tr(BCA)
 * tr(A) = tr(A^T)
 * tr(A+B) = tr(A) + tr(B)
