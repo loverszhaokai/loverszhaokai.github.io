@@ -2,12 +2,26 @@
 layout: post
 title: "UTF-8 and Unicode"
 date:   2016-01-07 20:01 IST
-categories: utf-8 unicode
-tags: utf-8 unicode
+categories: ["utf-8", "unicode"]
+tags: ["utf-8", "unicode"]
 comments: true
 analytics: true
 ---
+
 <span/>
+
+<span style="color: #0645ad; font-size:20px">Table of Content<span/>
+
+  * TOC
+  {:toc}
+
+## 1. Reference
+
+[UTF-8-Wikipedia](https://en.wikipedia.org/wiki/UTF-8)
+[Replacement character: U+FFFD](https://en.wikipedia.org/wiki/Specials_(Unicode_block))
+
+## 2. Unicode -> UTF-8
+
 
 |----------------------+-------------------------------------------------------------|
 |Unicode               | UTF-8                                                       |
@@ -21,3 +35,9 @@ analytics: true
 |----------------------|-------------------------------------------------------------|
 
 The unicode of Chinese is from **0x4E** to **0xFFFF**
+
+## 3. Replacement character: U+FFFD
+
+![Replacement character](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Replacement_character.svg/200px-Replacement_character.svg.png){: .center-image }
+
+The replacement character indicates the invliad byte in UTF-8.
