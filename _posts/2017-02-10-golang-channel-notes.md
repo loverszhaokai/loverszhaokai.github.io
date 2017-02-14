@@ -19,7 +19,7 @@ analytics: true
 
 ## 2. The writer maybe block much time
 
-**Assumer**: the channel contains at most **100** elements, and there is writer A and B.
+**Assume**: the channel contains at most **100** elements, and there is writer A and B.
 A writes to the channel every 10 seconds, B writes to the channel every seconds and
 B writes more elements than A. So the most elements of the channel belongs to B, and the
 elements of A must wait until all the elements of the channel are read. So the A writer
