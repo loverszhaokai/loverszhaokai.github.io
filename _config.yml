@@ -13,10 +13,6 @@ url:              http://loverszhaokai.com
 baseurl:          http://loverszhaokai.com/
 paginate:         10
 excerpt_separator: "<span/>"
-gems:
-- jemoji
-- jekyll-redirect-from
-- jekyll-sitemap
 
 author:
   name:           'Kai Zhao'
@@ -43,3 +39,5 @@ coderay:
   coderay_tab_width:         4
   coderay_bold_every:        10
   coderay_css:               style
+
+github: [metadata]
