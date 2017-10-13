@@ -34,8 +34,9 @@ analytics: true
  
 
 
-
+![早餐是的是酥油茶，馒头和土豆](../images/2017101301.jpg){: .center-image }
 早餐是的是酥油茶，馒头和土豆
+![早餐是的是酥油茶，馒头和土豆](/images/2017101301.jpg){: .center-image }
 
  
 
