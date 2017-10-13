@@ -20,7 +20,7 @@ analytics: true
 Reference:
 [docker centos7 安装ssh](http://blog.csdn.net/waixin/article/details/50212079)
 
-~~~
+{% highlight shell %}
 # /usr/sbin/sshd
 Could not load host key: /etc/ssh/ssh_host_rsa_key
 Could not load host key: /etc/ssh/ssh_host_ecdsa_key
@@ -39,4 +39,4 @@ Could not load host key: /etc/ssh/ssh_host_ed25519_key
 
 客户端
 $ ssh root@10.126.43.7 -p 13022
-~~~
+{% endhighlight %}
