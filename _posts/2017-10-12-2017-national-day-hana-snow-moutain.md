@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2017哈巴雪山游记"
-date:   2017-10-13 00:00 IST
+date:   2017-10-12 00:00 IST
 categories: ["travel"]
 tags: ["travel", "哈巴雪山"]
 comments: true
@@ -78,30 +78,27 @@ analytics: true
 月亮湾看日出
 
 ![](/images/2017101512.jpg){: .center-image }
-日出
-
-![](/images/2017101513.jpg){: .center-image }
 云海
 
-![](/images/2017101514.jpg){: .center-image }
+![](/images/2017101513.jpg){: .center-image }
 月亮湾
 
-![](/images/2017101515.jpg){: .center-image }
+![](/images/2017101514.jpg){: .center-image }
 回首吓尿了
 
-![](/images/2017101516.jpg){: .center-image }
+![](/images/2017101515.jpg){: .center-image }
 藏族小哥，谢师傅，速度快，人好，在无人区呆了好几年
 
-![](/images/2017101517.png){: .center-image }
+![](/images/2017101516.jpg){: .center-image }
 好多安全绳，滑坠就GG了
 
-![](/images/2017101518.jpg){: .center-image }
+![](/images/2017101517.png){: .center-image }
 哈巴雪山海拔5396米
 
-![](/images/2017101519.jpg){: .center-image }
+![](/images/2017101518.jpg){: .center-image }
 晚上老何家聚餐
 
-![](/images/2017101520.jpg){: .center-image }
+![](/images/2017101519.jpg){: .center-image }
 晚上住在老何家，条件比想象中的好
 
 老何说今天的天气一年也只有5天，我们运气真的很好，但是，我高反了。总结下教训，开始爬太快了，准备不足，最好是提前适应几天高海拔。
@@ -109,32 +106,30 @@ analytics: true
 ## 第4天: 09-26日，哈巴村->虎跳峡->香格里拉
 
 中午来到下虎跳吃午饭。
-
-![](/images/2017101521.jpg){: .center-image }
+![](/images/2017101520.jpg){: .center-image }
 左侧哈巴，右侧玉龙
 
-![](/images/2017101522.jpg){: .center-image }
+![](/images/2017101521.jpg){: .center-image }
 吃完午饭，徒步下虎跳到中虎跳
 
-![](/images/2017101523.png){: .center-image }
+![](/images/2017101522.jpg){: .center-image }
 
 此处有个故事：从下虎跳的饭店下来后，开始时徒步的路清晰，后面逐渐分不清，这个季节草长得很茂盛，看不到路，特别是遇到分岔路的时候，视野受限看不远，只能凭感觉走。我的感觉果然不一般，选了一条好久没人走的路，一路上遇到好多蜘蛛网，我的天！！！此处非常思念阿旺多吉！！！后面一边念着阿旺多吉一边闯 😤，终于见到了人走的路，后面就是一路顺风，来到了收费点，拍了照片，顺着路回到公路上。真是命途多舛。
 
 上虎跳看水，下午接到小白和嘉敏。
 
-![](/images/2017101524.jpg){: .center-image }
+![](/images/2017101523.png){: .center-image }
 阿旺多吉，赵凯，小周，小白，嘉敏
 
 晚上住在香格里拉
+![](/images/2017101524.jpg){: .center-image }
 
-![](/images/2017101525.jpg){: .center-image }
 晚饭时我还有点高反，恶心，微高烧。坑了阿旺多吉一顿饭。😝
 
 晚上钥匙约我和小周出来喝酒唱歌
 第二天凌晨12点多去转金桶。
 
-![](/images/2017101526.jpg){: .center-image }
-
+![](/images/2017101525.jpg){: .center-image }
 我很悲剧的感冒了。高海拔感冒果然不容易好，回到北京感冒才好点。
 
 就这样哈巴雪山就结束了，认识了好多康巴汉子。还认识了天津钥匙和小雪。
