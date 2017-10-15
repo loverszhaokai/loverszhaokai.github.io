@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "2017哈巴雪山游记"
+title: "2017四姑娘山游记"
 date:   2017-10-12 00:00 IST
 categories: ["travel"]
-tags: ["travel", "哈巴雪山"]
+tags: ["travel", "四姑娘山"]
 comments: true
 analytics: true
 ---
@@ -18,56 +18,47 @@ analytics: true
 日期： 2017-10-03 ~ 2017-10-05
  
 选择的扎西协作队，非常专业，很安全。
+
+[扎西的朋友圈](https://mp.weixin.qq.com/s?__biz=MzAxMzE0NDkyMA==&mid=2654142063&idx=1&sn=1920a79a5ffae73b1eca423f75fb06b1&chksm=80615858b716d14e13d18af075e36fc6f7d651cd405cab6f53e7f3cb1c987f241d6d12b84ba7&mpshare=1&scene=1&srcid=10052L4j94A1DoTv7RxUolZk&key=04f08709c100f7bd80b5472761dfa43fe60496946dc5b653d3fd0ea1f19353cf4ddc388ee74ced5cb4a5b8ba3d85c3b7a39a8c2a3b03834144a16a0ecf34edd680c122dc769cfbb3177193ef9e086d62&ascene=0&uin=MjMwNTE4NTUyMQ%3D%3D&devicetype=iMac+MacBookPro11%2C3+OSX+OSX+10.11.4+build(15E65)&version=12020610&nettype=WIFI&fontScale=100&pass_ticket=wMS3Zz%2Fyf0PyP4sOQ2xoUZ84WYXQF3FqJ6yDpI9w4oVnf65d02pGykpqGnqIvsIY)
  
-扎西的朋友圈：
-https://mp.weixin.qq.com/s?__biz=MzAxMzE0NDkyMA==&mid=2654142063&idx=1&sn=1920a79a5ffae73b1eca423f75fb06b1&chksm=80615858b716d14e13d18af075e36fc6f7d651cd405cab6f53e7f3cb1c987f241d6d12b84ba7&mpshare=1&scene=1&srcid=10052L4j94A1DoTv7RxUolZk&key=04f08709c100f7bd80b5472761dfa43fe60496946dc5b653d3fd0ea1f19353cf4ddc388ee74ced5cb4a5b8ba3d85c3b7a39a8c2a3b03834144a16a0ecf34edd680c122dc769cfbb3177193ef9e086d62&ascene=0&uin=MjMwNTE4NTUyMQ%3D%3D&devicetype=iMac+MacBookPro11%2C3+OSX+OSX+10.11.4+build(15E65)&version=12020610&nettype=WIFI&fontScale=100&pass_ticket=wMS3Zz%2Fyf0PyP4sOQ2xoUZ84WYXQF3FqJ6yDpI9w4oVnf65d02pGykpqGnqIvsIY
- 
- 
- 
-第1天：10-03日，成都 -> 四姑娘山镇，技术训练
+## 第1天：10-03日，成都 -> 四姑娘山镇，技术训练
  
 早晨在一品天下地铁站集合，坐车到达四姑娘山镇，路上大概花了3小时，波尔郎司机开的好快，比老陈都快。
 到了扎西家海拔大概是3200，中午天气很晴朗，出去吃了个米粉。下午进行技术训练。
  
  
-
+![](/images/2017101401.jpeg){: .center-image }
 扎西办公室合影——薛晨老皮，薛晨，大脸猫，赵凯，蝎子
  
  
-
+![](/images/2017101402.jpeg){: .center-image }
 扎西家门口合影
  
  
-
+![](/images/2017101403.jpeg){: .center-image }
 下午进行技术训练——上升器和下降器
- 
 
- 
+![](/images/2017101404.jpeg){: .center-image }
+![](/images/2017101405.jpeg){: .center-image }
 
- 
- 
-第2天：10-04日，四姑娘山镇 -> 三峰大本营 
+## 第2天：10-04日，四姑娘山镇 -> 三峰大本营 
  
 早晨下雨了，心情像那雨水一样。😭。收拾好东西，吃完早餐，进景区，坐公交车到长坪沟。
 下车，开始徒步到大本营，开始是一段森铃，后面就没有树木了，3900有一个牛棚，休息吃午餐。大概下午3点到达4300的大本营。
- 
 
+![](/images/2017101406.jpeg){: .center-image }
 3900牛棚
- 
 
+![](/images/2017101407.jpeg){: .center-image }
 下午雾越来越大
- 
 
+![](/images/2017101408.jpeg){: .center-image }
 大本营
- 
- 
 
- 
-
+![](/images/2017101409.jpeg){: .center-image }
 大本营合影——大脸猫，赵凯，蝎子
- 
- 
 
+![](/images/2017101410.jpeg){: .center-image }
 傍晚开始下雨，我的天！大脸猫和蝎子都是雨神，大脸猫这是第四次来爬三峰了，只有我一个太阳神。雨下个没玩，开始不抱希望了。
  
 7点多进帐篷整理行李和装备，蝎子交给我腹式呼吸，我尝试了30分钟。开始睡觉，一直没睡踏实。直到11点多，才睡着。晚上没有被雨雪和风吵醒，没准第二天是个好天气！
@@ -75,7 +66,7 @@ https://mp.weixin.qq.com/s?__biz=MzAxMzE0NDkyMA==&mid=2654142063&idx=1&sn=1920a7
 今夜是中秋，这是我中秋夜中海拔最高的时候了。
  
  
-第3天： 10-05日，三峰大本营 -> 登顶 -> 四姑娘山镇 -> 成都
+## 第3天： 10-05日，三峰大本营 -> 登顶 -> 四姑娘山镇 -> 成都
  
 2点起床，早晨出了帐篷，看到明亮的月亮和无数个星星，我的天，好天气！！！我们有望是国庆第一批登顶三峰的队伍了！吃完饭，穿戴好装备，打好热水。3点准时出发。
  
@@ -89,45 +80,42 @@ https://mp.weixin.qq.com/s?__biz=MzAxMzE0NDkyMA==&mid=2654142063&idx=1&sn=1920a7
  
 还有有命安全的到达成都，在茶店子附近的布丁酒店住下了。
  
-
+![](/images/2017101411.jpeg){: .center-image }
 这是早晨8点时的大本营，出发前没来的拍，云海在大本营之下
  
-
+![](/images/2017101412.jpeg){: .center-image }
 途中小憩一下，这支队伍的协作很专业，海拔边上升边休息，大家慢慢熟悉高海拔，防止高反。月亮很亮，能看到远处的云海！
  
-
+![](/images/2017101413.jpeg){: .center-image }
 三峰看日出
  
-
+![](/images/2017101414.jpeg){: .center-image }
 云海
  
-
+![](/images/2017101415.jpeg){: .center-image }
 天亮了，开始上升了，最后一段，70多度
 
- 
-
- 
-
+![](/images/2017101416.jpeg){: .center-image }
+![](/images/2017101417.jpeg){: .center-image }
 三峰登顶，协作很专业，每个协作都是安全绳连接，好奇的往峰的背侧看了眼，吓我一跳，另一面是悬崖
  
-
+![](/images/2017101418.jpeg){: .center-image }
 赵凯和大脸猫，背后那是幺妹峰
  
 下山的时候，腿都软了，自己的命就这么交给绳子了，坡度太陡，体力也快消耗完了。
  
-
+![](/images/2017101419.jpeg){: .center-image }
 海拔5100的垭口上，背后远处，左侧的雪山是贡嘎，右侧是雅拉
- 
- 
 
+![](/images/2017101420.jpeg){: .center-image }
 云雾围绕在山间
  
-
+![](/images/2017101421.jpeg){: .center-image }
 远处幺妹峰，近处三峰
  
-
+![](/images/2017101422.jpeg){: .center-image }
 骆驼峰——四姑娘山区好多高海拔山峰
  
-
+![](/images/2017101423.jpeg){: .center-image }
 远眺四姑娘山镇和长坪沟
 
