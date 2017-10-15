@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2017国庆稻城亚丁游记"
-date:   2017-10-13 00:00 IST
+date:   2017-10-13 01:00 IST
 categories: ["travel"]
 tags: ["travel", "稻城亚丁"]
 comments: true
