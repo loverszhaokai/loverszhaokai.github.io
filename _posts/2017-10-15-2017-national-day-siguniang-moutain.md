@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2017四姑娘山游记"
-date:   2017-10-12 00:00 IST
+date:   2017-10-15 00:00 IST
 categories: ["travel"]
 tags: ["travel", "四姑娘山"]
 comments: true
