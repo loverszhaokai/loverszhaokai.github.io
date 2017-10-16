@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  Liangliang Zhang
-date:   2015-04-25 16:38 IST
-
+title: "Liangliang Zhang"
+date:   2015-04-25 00:00 IST
+categories: ["friends"]
+tags: ["friends", "bupt"]
+comments: true
+analytics: true
 ---
 
 <span/>
