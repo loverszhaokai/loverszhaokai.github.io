@@ -22,7 +22,6 @@ $ sudo docker run -it --net=host --privileged --entrypoint='' --pid=host --name=
 # echo 0 > /proc/sys/kernel/randomize_va_space
 # cd $EMACS_DIR(emacs-24.5) 
 # ./autogen.sh && mkdir build && cd build && ../configure && make -j32 && make install
-# echo 2 > /proc/sys/kernel/randomize_va_space
 # emacs --debug-init
 # add 'PATH=/usr/local/git-2.6.7/bin:$PATH' to ~/.bash_profile
 # source ~/.bash_profile
